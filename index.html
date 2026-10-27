@@ -3,26 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DASH – Informativa sulla privacy</title>
+<title>DASH by TMAC</title>
+<meta name="description" content="DASH – Deadlines, Approvals and Signals Hub. Niente più cose ferme.">
+<link rel="icon" href="assets/mark-128.png">
 <style>
   :root { --testo: #1d2733; --blu: #00497A; --sfondo: #f2f5f8; --carta: #fff; --linea: #dfe5ec; }
   @media (prefers-color-scheme: dark) { :root { --testo: #e6edf3; --blu: #6fb3e6; --sfondo: #0f1720; --carta: #17212c; --linea: #2a3846; } }
   body { margin: 0; background: var(--sfondo); color: var(--testo); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  article { background: var(--carta); border: 1px solid var(--linea); border-radius: 14px; padding: 28px 28px 20px; margin-bottom: 28px; }
-  h1 { color: var(--blu); font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
-  h2 { color: var(--blu); font-size: 20px; margin: 28px 0 8px; }
-  .data { opacity: .7; margin: 0 0 18px; }
-  table { border-collapse: collapse; width: 100%; font-size: 15px; }
-  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-top: 1px solid var(--linea); }
-  a { color: var(--blu); }
-  nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 16px; }
+  main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; max-width: 760px; margin: 0 auto 18px; }
   nav a { display: block; text-align: center; padding: 9px 4px; border-radius: 8px; text-decoration: none; font-size: 15px;
     background: var(--linea); color: var(--testo); border-top: 5px solid transparent; }
   nav a.attiva { background: var(--carta); border-top-color: var(--blu); font-weight: 600; }
-  /* con lo script si vede una lingua alla volta; senza, tutte di seguito */
+  .marchio { display: flex; align-items: center; gap: 12px; margin: 6px 0 14px; }
+  .marchio img { width: 48px; height: 48px; border-radius: 11px; }
+  .marchio b { font-size: 28px; letter-spacing: 3px; color: var(--blu); }
+  .marchio span { opacity: .7; font-size: 15px; }
+  .copertina { display: block; width: 100%; height: auto; border-radius: 16px; margin-bottom: 22px; }
+  .intro { font-size: 19px; max-width: 760px; margin: 0 0 22px; }
+  .schede { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .scheda { display: block; background: var(--carta); border: 1px solid var(--linea); border-radius: 14px; padding: 18px; text-decoration: none; color: var(--testo); }
+  .scheda:hover { border-color: var(--blu); }
+  .scheda h2 { color: var(--blu); font-size: 19px; margin: 0 0 6px; }
+  .scheda p { margin: 0; font-size: 15px; }
+  .piede { margin-top: 28px; font-size: 14px; opacity: .75; }
   .js article { display: none; }
   .js article.attiva { display: block; }
+  @media (max-width: 720px) { .schede { grid-template-columns: 1fr; } .intro { font-size: 17px; } }
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -31,314 +38,60 @@
 <nav><a href="#it" lang="it">Italiano</a><a href="#en" lang="en">English</a><a href="#fr" lang="fr">Français</a><a href="#de" lang="de">Deutsch</a></nav>
 
 <article id="it">
-<h1>DASH – Informativa sulla privacy</h1>
-<p class="data">Ultimo aggiornamento: 26 ottobre 2026</p>
-
-<p>DASH (Deadlines, Approvals and Signals Hub) è un'app di TMAC S.r.l.s. che legge la posta, il calendario, le
-attività di Microsoft To Do e, se lo scegli, Microsoft Teams del <strong>tuo</strong> account Microsoft 365 e ti
-mostra cosa è in ritardo, cosa aspetta una tua risposta e cosa stai aspettando dagli altri.</p>
-
-<h2>In breve</h2>
-<ul>
-  <li>TMAC <strong>non ha server di DASH</strong> e <strong>non riceve</strong> i tuoi dati: l'app comunica direttamente
-    con Microsoft e con i servizi indicati qui sotto.</li>
-  <li>Niente pubblicità, niente profilazione, niente statistiche d'uso, nessuna vendita o cessione di dati.</li>
-  <li>L'intelligenza artificiale è <strong>facoltativa</strong> e spenta finché non la attivi tu.</li>
-</ul>
-
-<h2>Titolare del trattamento</h2>
-<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO), Italia – P. IVA 13174990013 – e-mail: <span class="em">dash.privacy [at] tmac.it</span>.<br>
-Per le informazioni del tuo account aziendale Microsoft 365 il titolare resta la tua organizzazione: DASH le legge
-solo per tuo conto e con i permessi che tu (o il tuo amministratore) concedi.</p>
-
-<h2>Quali dati usa DASH e perché</h2>
-<table>
-  <tr><th>Dati</th><th>Perché</th><th>Dove restano</th></tr>
-  <tr><td>Nome e indirizzo e-mail del tuo account Microsoft</td><td>Accesso e saluto nell'app</td><td>Sul tuo dispositivo</td></tr>
-  <tr><td>Mail (mittente, destinatari, oggetto, data, anteprima e testo)</td><td>Capire cosa è in ritardo o in attesa di risposta</td><td>Sul tuo dispositivo; DASH non le modifica né le invia</td></tr>
-  <tr><td>Calendario</td><td>Agenda e preparazione delle riunioni</td><td>Sul tuo dispositivo</td></tr>
-  <tr><td>Attività di Microsoft To Do</td><td>Mostrarle e segnarle come fatte</td><td>Nel tuo Microsoft 365</td></tr>
-  <tr><td>Chat e canali di Teams (facoltativo)</td><td>Aggiungere al Radar i messaggi di Teams</td><td>Sul tuo dispositivo</td></tr>
-  <tr><td>Impostazioni e regole del Radar</td><td>Ritrovarle su tutti i tuoi dispositivi</td><td>In una cartella riservata all'app nel <strong>tuo</strong> OneDrive (App/DASH)</td></tr>
-  <tr><td>Città per il meteo</td><td>Mostrare le previsioni</td><td>Sul tuo dispositivo</td></tr>
-</table>
-<p>L'accesso a Microsoft avviene sulla pagina ufficiale di Microsoft: DASH non vede né conserva la tua password.
-I gettoni di accesso restano sul dispositivo e si cancellano quando esci dall'account.</p>
-
-<h2>Intelligenza artificiale (facoltativa)</h2>
-<p>Se attivi l'AI, per riassumere i segnali e preparare le riunioni DASH invia <strong>l'oggetto e un estratto di al
-massimo 2.000 caratteri</strong> delle mail o dei messaggi interessati al servizio che hai scelto:</p>
-<ul>
-  <li><strong>Microsoft 365 Copilot</strong>, dentro il tuo Microsoft 365, alle condizioni del tuo contratto Microsoft;</li>
-  <li><strong>Anthropic (Claude)</strong>, con la chiave API che inserisci tu, alle condizioni commerciali di Anthropic,
-    che non usa i dati ricevuti tramite API per addestrare i propri modelli.</li>
-</ul>
-<p>Puoi spegnere l'AI in qualunque momento dalle impostazioni.</p>
-
-<h2>Altri servizi usati</h2>
-<ul>
-  <li><strong>Microsoft Graph</strong> (Microsoft Corporation): lettura dei dati del tuo account e sincronizzazione su OneDrive.</li>
-  <li><strong>Open-Meteo</strong>: previsioni del tempo e ricerca della città; riceve solo le coordinate o il nome della città.</li>
-  <li><strong>ipwho.is</strong> e, in riserva, <strong>BigDataCloud</strong>: solo se scegli il meteo «automatico», per
-    stimare la città dall'indirizzo IP. DASH non usa il GPS del dispositivo.</li>
-</ul>
-<p>Questi servizi possono trovarsi anche fuori dall'Unione europea; in tal caso il trasferimento avviene con le
-garanzie previste dal GDPR (decisione di adeguatezza o clausole contrattuali tipo).</p>
-
-<h2>Base giuridica e conservazione</h2>
-<p>I dati sono trattati per fornirti il servizio che hai chiesto installando e collegando l'app (art. 6.1.b GDPR) e,
-per l'AI e il meteo automatico, sulla base della tua scelta di attivarli. Restano sul dispositivo finché usi DASH:
-si cancellano disinstallando l'app (su Windows e Mac anche eliminando la cartella dei dati di DASH); uscendo dall'account si cancellano gli accessi. Il file nella cartella App/DASH del tuo OneDrive puoi
-eliminarlo quando vuoi.</p>
-
-<h2>Minori</h2>
-<p>DASH è uno strumento di lavoro e non è rivolto ai minori di 16 anni.</p>
-
-<h2>I tuoi diritti</h2>
-<p>Hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati, e di proporre
-reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).
-Per qualunque richiesta scrivi a <span class="em">dash.privacy [at] tmac.it</span>. Puoi anche
-revocare in ogni momento i permessi concessi a DASH dalla pagina <a href="https://myapps.microsoft.com">myapps.microsoft.com</a>
-o chiedendo al tuo amministratore Microsoft 365.</p>
-
-<h2>Modifiche</h2>
-<p>Se l'informativa cambia, la nuova versione è pubblicata su questa pagina con la data di aggiornamento.</p>
+<div class="marchio"><img src="assets/mark-128.png" alt=""><b>DASH</b><span>Deadlines, Approvals and Signals Hub · by TMAC</span></div>
+<img class="copertina" src="img/testata-it.jpg" alt="DASH su iPad, iPhone e iPhone Duo: Niente più cose ferme.">
+<p class="intro">Ogni mattina DASH ti dice cosa è in ritardo, quali approvazioni sono ferme, chi aspetta una tua risposta e
+cosa stai aspettando dagli altri. Legge la posta, il calendario e le attività del tuo Microsoft 365: tu non inserisci niente.</p>
+<div class="schede">
+  <a class="scheda" href="assistance.html#it"><h2>Manuale e assistenza</h2><p>Il manuale da leggere o in PDF, i primi passi, le domande frequenti e come scriverci.</p></a>
+  <a class="scheda" href="privacy.html#it"><h2>Informativa sulla privacy</h2><p>Quali dati usa DASH, dove restano e i tuoi diritti. TMAC non vede i tuoi dati.</p></a>
+  <a class="scheda" href="assistance.html#it"><h2>Per l'amministratore</h2><p>Come registrare DASH una sola volta per tutta l'organizzazione in Microsoft Entra ID.</p></a>
+</div>
+<p class="piede">TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO) – P. IVA 13174990013</p>
 </article>
 
 <article id="en" lang="en">
-<h1>DASH – Privacy Policy</h1>
-<p class="data">Last updated: 26 October 2026</p>
-
-<p>DASH (Deadlines, Approvals and Signals Hub) is an app by TMAC S.r.l.s. It reads the mail, calendar, Microsoft To Do
-tasks and, if you choose, Microsoft Teams of <strong>your</strong> Microsoft 365 account, and shows you what is overdue,
-what is waiting for your reply and what you are waiting for from others.</p>
-
-<h2>In short</h2>
-<ul>
-  <li>TMAC runs <strong>no DASH servers</strong> and <strong>does not receive</strong> your data: the app talks directly
-    to Microsoft and to the services listed below.</li>
-  <li>No advertising, no profiling, no usage analytics, no sale or sharing of data.</li>
-  <li>Artificial intelligence is <strong>optional</strong> and stays off until you turn it on.</li>
-</ul>
-
-<h2>Data controller</h2>
-<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO), Italy – VAT IT13174990013 – e-mail: <span class="em">dash.privacy [at] tmac.it</span>.<br>
-For the information in your work Microsoft 365 account, your organisation remains the controller: DASH only reads it
-on your behalf, with the permissions you (or your administrator) grant.</p>
-
-<h2>What data DASH uses and why</h2>
-<table>
-  <tr><th>Data</th><th>Why</th><th>Where it stays</th></tr>
-  <tr><td>Name and e-mail address of your Microsoft account</td><td>Sign-in and greeting</td><td>On your device</td></tr>
-  <tr><td>Mail (sender, recipients, subject, date, preview and text)</td><td>Finding what is overdue or awaiting a reply</td><td>On your device; DASH never changes or sends mail</td></tr>
-  <tr><td>Calendar</td><td>Agenda and meeting preparation</td><td>On your device</td></tr>
-  <tr><td>Microsoft To Do tasks</td><td>Showing them and marking them done</td><td>In your Microsoft 365</td></tr>
-  <tr><td>Teams chats and channels (optional)</td><td>Adding Teams messages to the Radar</td><td>On your device</td></tr>
-  <tr><td>Settings and Radar rules</td><td>Keeping them in sync across your devices</td><td>In an app-only folder of <strong>your</strong> OneDrive (Apps/DASH)</td></tr>
-  <tr><td>City for the weather</td><td>Showing the forecast</td><td>On your device</td></tr>
-</table>
-<p>You sign in on Microsoft's official page: DASH never sees or stores your password. Access tokens stay on the device
-and are deleted when you sign out.</p>
-
-<h2>Artificial intelligence (optional)</h2>
-<p>If you turn AI on, to summarise signals and prepare meetings DASH sends <strong>the subject and an excerpt of at most
-2,000 characters</strong> of the relevant messages to the service you chose:</p>
-<ul>
-  <li><strong>Microsoft 365 Copilot</strong>, inside your Microsoft 365, under your Microsoft agreement;</li>
-  <li><strong>Anthropic (Claude)</strong>, with the API key you enter, under Anthropic's commercial terms; Anthropic does
-    not use data received through the API to train its models.</li>
-</ul>
-<p>You can turn AI off at any time in the settings.</p>
-
-<h2>Other services</h2>
-<ul>
-  <li><strong>Microsoft Graph</strong> (Microsoft Corporation): reading your account data and syncing to OneDrive.</li>
-  <li><strong>Open-Meteo</strong>: weather forecast and city search; it only receives coordinates or the city name.</li>
-  <li><strong>ipwho.is</strong> and, as a fallback, <strong>BigDataCloud</strong>: only if you choose "automatic" weather,
-    to estimate your city from your IP address. DASH does not use the device's GPS.</li>
-</ul>
-<p>These services may be located outside the European Union; any transfer relies on the safeguards of the GDPR
-(adequacy decision or standard contractual clauses).</p>
-
-<h2>Legal basis and retention</h2>
-<p>Data is processed to provide the service you requested by installing and connecting the app (Art. 6(1)(b) GDPR)
-and, for AI and automatic weather, based on your choice to turn them on. It stays on the device while you use DASH and
-is deleted when you uninstall the app (on Windows and Mac also by deleting the DASH data folder); signing out deletes the access tokens. You can delete the file in your OneDrive Apps/DASH folder at any time.</p>
-
-<h2>Children</h2>
-<p>DASH is a work tool and is not intended for children under 16.</p>
-
-<h2>Your rights</h2>
-<p>You have the right to access, rectify, erase, restrict, object to and port your data, and to lodge a complaint with
-the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) or your local
-authority. For any request write to <span class="em">dash.privacy [at] tmac.it</span>. You can also revoke the
-permissions granted to DASH at any time at <a href="https://myapps.microsoft.com">myapps.microsoft.com</a> or through your
-Microsoft 365 administrator.</p>
-
-<h2>Changes</h2>
-<p>If this policy changes, the new version is published on this page with its update date.</p>
+<div class="marchio"><img src="assets/mark-128.png" alt=""><b>DASH</b><span>Deadlines, Approvals and Signals Hub · by TMAC</span></div>
+<img class="copertina" src="img/testata-en.jpg" alt="DASH on iPad, iPhone and iPhone Duo: Nothing left hanging.">
+<p class="intro">Every morning DASH tells you what's overdue, which approvals have stalled, who is waiting for your reply
+and what you're still waiting for from others. It reads the mail, calendar and tasks in your Microsoft 365 — you enter nothing.</p>
+<div class="schede">
+  <a class="scheda" href="assistance.html#en"><h2>User guide and support</h2><p>The guide online or as a PDF, getting started, FAQs and how to contact us.</p></a>
+  <a class="scheda" href="privacy.html#en"><h2>Privacy policy</h2><p>What data DASH uses, where it stays and your rights. TMAC never sees your data.</p></a>
+  <a class="scheda" href="assistance.html#en"><h2>For administrators</h2><p>How to register DASH once for your whole organisation in Microsoft Entra ID.</p></a>
+</div>
+<p class="piede">TMAC S.r.l.s. – Via Legnano 27, 10128 Turin (TO), Italy – VAT IT13174990013</p>
 </article>
 
 <article id="fr" lang="fr">
-<h1>DASH – Politique de confidentialité</h1>
-<p class="data">Dernière mise à jour : 26 octobre 2026</p>
-
-<p>DASH (Deadlines, Approvals and Signals Hub) est une application de TMAC S.r.l.s. Elle consulte la messagerie, le
-calendrier, les tâches Microsoft To Do et, si vous le souhaitez, Microsoft Teams de <strong>votre</strong> compte
-Microsoft 365, pour vous montrer ce qui est en retard, ce qui attend votre réponse et ce que vous attendez des autres.</p>
-
-<h2>L'essentiel</h2>
-<ul>
-  <li>TMAC n'exploite <strong>aucun serveur DASH</strong> et ne <strong>reçoit pas</strong> vos données : l'application
-    communique directement avec Microsoft et avec les services indiqués ci-dessous.</li>
-  <li>Ni publicité, ni profilage, ni mesure d'audience, ni vente ou partage de données.</li>
-  <li>L'intelligence artificielle est <strong>facultative</strong> et reste désactivée tant que vous ne l'activez pas.</li>
-</ul>
-
-<h2>Responsable du traitement</h2>
-<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Turin (TO), Italie – N° TVA IT13174990013 – e-mail : <span class="em">dash.privacy [at] tmac.it</span>.<br>
-Pour les informations de votre compte professionnel Microsoft 365, votre organisation reste responsable du
-traitement : DASH se contente de les lire pour votre compte, avec les autorisations que vous (ou votre administrateur)
-avez accordées.</p>
-
-<h2>Quelles données DASH utilise, et pourquoi</h2>
-<table>
-  <tr><th>Données</th><th>Pourquoi</th><th>Où elles restent</th></tr>
-  <tr><td>Nom et adresse e-mail de votre compte Microsoft</td><td>Connexion et message d'accueil</td><td>Sur votre appareil</td></tr>
-  <tr><td>E-mails (expéditeur, destinataires, objet, date, aperçu et texte)</td><td>Repérer ce qui est en retard ou attend une réponse</td><td>Sur votre appareil ; DASH ne modifie ni n'envoie aucun e-mail</td></tr>
-  <tr><td>Calendrier</td><td>Agenda et préparation des réunions</td><td>Sur votre appareil</td></tr>
-  <tr><td>Tâches Microsoft To Do</td><td>Les afficher et les marquer comme terminées</td><td>Dans votre Microsoft 365</td></tr>
-  <tr><td>Conversations et canaux Teams (facultatif)</td><td>Intégrer les messages Teams au Radar</td><td>Sur votre appareil</td></tr>
-  <tr><td>Réglages et règles du Radar</td><td>Les retrouver sur tous vos appareils</td><td>Dans un dossier réservé à l'application, sur <strong>votre</strong> OneDrive (Applications/DASH)</td></tr>
-  <tr><td>Ville pour la météo</td><td>Afficher les prévisions</td><td>Sur votre appareil</td></tr>
-</table>
-<p>Vous vous connectez sur la page officielle de Microsoft : DASH ne voit jamais votre mot de passe et ne le conserve
-pas. Les jetons d'accès restent sur l'appareil et sont supprimés lorsque vous vous déconnectez.</p>
-
-<h2>Intelligence artificielle (facultative)</h2>
-<p>Si vous l'activez, DASH transmet au service de votre choix <strong>l'objet et un extrait de 2 000 caractères au
-plus</strong> des messages concernés, afin de résumer les signaux et de préparer vos réunions :</p>
-<ul>
-  <li><strong>Microsoft 365 Copilot</strong>, au sein de votre Microsoft 365, selon les conditions de votre contrat Microsoft ;</li>
-  <li><strong>Anthropic (Claude)</strong>, avec la clé API que vous saisissez, selon les conditions commerciales
-    d'Anthropic, qui n'utilise pas les données reçues via son API pour entraîner ses modèles.</li>
-</ul>
-<p>Vous pouvez désactiver l'IA à tout moment dans les réglages.</p>
-
-<h2>Autres services utilisés</h2>
-<ul>
-  <li><strong>Microsoft Graph</strong> (Microsoft Corporation) : lecture des données de votre compte et synchronisation sur OneDrive.</li>
-  <li><strong>Open-Meteo</strong> : prévisions météo et recherche de la ville ; ce service ne reçoit que des coordonnées ou un nom de ville.</li>
-  <li><strong>ipwho.is</strong> et, à défaut, <strong>BigDataCloud</strong> : uniquement si vous choisissez la météo
-    « automatique », pour estimer votre ville à partir de votre adresse IP. DASH n'utilise pas le GPS de l'appareil.</li>
-</ul>
-<p>Ces services peuvent être situés hors de l'Union européenne ; le cas échéant, le transfert s'appuie sur les
-garanties prévues par le RGPD (décision d'adéquation ou clauses contractuelles types).</p>
-
-<h2>Base légale et durée de conservation</h2>
-<p>Les données sont traitées pour vous fournir le service que vous avez demandé en installant et en connectant
-l'application (art. 6, par. 1, point b du RGPD) et, pour l'IA et la météo automatique, parce que vous avez choisi de
-les activer. Elles restent sur l'appareil tant que vous utilisez DASH et sont supprimées lorsque vous désinstallez
-l'application (sous Windows et sur Mac, également en supprimant le dossier de données de DASH) ; la déconnexion
-supprime les jetons d'accès. Vous pouvez supprimer à tout moment le fichier du dossier Applications/DASH de votre OneDrive.</p>
-
-<h2>Mineurs</h2>
-<p>DASH est un outil professionnel et ne s'adresse pas aux personnes de moins de 16 ans.</p>
-
-<h2>Vos droits</h2>
-<p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité, et
-pouvez introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>) ou de l'autorité de
-protection des données de votre pays. Pour toute demande, écrivez à <span class="em">dash.privacy [at] tmac.it</span>.
-Vous pouvez aussi retirer à tout moment les autorisations accordées à DASH sur
-<a href="https://myapps.microsoft.com">myapps.microsoft.com</a> ou auprès de votre administrateur Microsoft 365.</p>
-
-<h2>Modifications</h2>
-<p>En cas de modification, la nouvelle version est publiée sur cette page avec sa date de mise à jour.</p>
+<div class="marchio"><img src="assets/mark-128.png" alt=""><b>DASH</b><span>Deadlines, Approvals and Signals Hub · by TMAC</span></div>
+<img class="copertina" src="img/testata-fr.jpg" alt="DASH sur iPad, iPhone et iPhone Duo : Plus rien en suspens.">
+<p class="intro">Chaque matin, DASH vous indique ce qui est en retard, quelles approbations sont bloquées, qui attend votre
+réponse et ce que vous attendez encore des autres. Il lit la messagerie, le calendrier et les tâches de votre Microsoft 365 : vous n'avez rien à saisir.</p>
+<div class="schede">
+  <a class="scheda" href="assistance.html#fr"><h2>Manuel et assistance</h2><p>Le manuel en ligne ou en PDF, les premiers pas, les questions fréquentes et comment nous écrire.</p></a>
+  <a class="scheda" href="privacy.html#fr"><h2>Politique de confidentialité</h2><p>Les données utilisées par DASH, où elles restent et vos droits. TMAC ne voit pas vos données.</p></a>
+  <a class="scheda" href="assistance.html#fr"><h2>Pour l'administrateur</h2><p>Comment enregistrer DASH une seule fois pour toute l'organisation dans Microsoft Entra ID.</p></a>
+</div>
+<p class="piede">TMAC S.r.l.s. – Via Legnano 27, 10128 Turin (TO), Italie – N° TVA IT13174990013</p>
 </article>
 
 <article id="de" lang="de">
-<h1>DASH – Datenschutzerklärung</h1>
-<p class="data">Stand: 26. Oktober 2026</p>
-
-<p>DASH (Deadlines, Approvals and Signals Hub) ist eine App der TMAC S.r.l.s. Sie liest E-Mails, Kalender, Aufgaben aus
-Microsoft To Do und – wenn Sie möchten – Microsoft Teams aus <strong>Ihrem</strong> Microsoft-365-Konto und zeigt
-Ihnen, was überfällig ist, wo eine Antwort von Ihnen erwartet wird und worauf Sie selbst noch warten.</p>
-
-<h2>Das Wichtigste in Kürze</h2>
-<ul>
-  <li>TMAC betreibt <strong>keine eigenen Server für DASH</strong> und <strong>erhält keine</strong> Ihrer Daten: Die App
-    kommuniziert direkt mit Microsoft und den unten genannten Diensten.</li>
-  <li>Keine Werbung, kein Profiling, keine Nutzungsanalyse, kein Verkauf und keine Weitergabe von Daten.</li>
-  <li>Künstliche Intelligenz ist <strong>optional</strong> und bleibt ausgeschaltet, bis Sie sie aktivieren.</li>
-</ul>
-
-<h2>Verantwortlicher</h2>
-<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Turin (TO), Italien – USt-IdNr. IT13174990013 – E-Mail: <span class="em">dash.privacy [at] tmac.it</span>.<br>
-Für die Daten in Ihrem geschäftlichen Microsoft-365-Konto bleibt Ihre Organisation verantwortlich: DASH liest sie nur
-in Ihrem Auftrag und mit den Berechtigungen, die Sie (oder Ihre Administration) erteilt haben.</p>
-
-<h2>Welche Daten DASH nutzt – und wozu</h2>
-<table>
-  <tr><th>Daten</th><th>Zweck</th><th>Speicherort</th></tr>
-  <tr><td>Name und E-Mail-Adresse Ihres Microsoft-Kontos</td><td>Anmeldung und Begrüßung</td><td>Auf Ihrem Gerät</td></tr>
-  <tr><td>E-Mails (Absender, Empfänger, Betreff, Datum, Vorschau und Text)</td><td>Erkennen, was überfällig ist oder auf eine Antwort wartet</td><td>Auf Ihrem Gerät; DASH ändert oder versendet keine E-Mails</td></tr>
-  <tr><td>Kalender</td><td>Terminübersicht und Vorbereitung von Besprechungen</td><td>Auf Ihrem Gerät</td></tr>
-  <tr><td>Aufgaben aus Microsoft To Do</td><td>Anzeigen und als erledigt markieren</td><td>In Ihrem Microsoft 365</td></tr>
-  <tr><td>Teams-Chats und -Kanäle (optional)</td><td>Teams-Nachrichten ins Radar aufnehmen</td><td>Auf Ihrem Gerät</td></tr>
-  <tr><td>Einstellungen und Radar-Regeln</td><td>Auf allen Ihren Geräten verfügbar machen</td><td>In einem nur für die App bestimmten Ordner in <strong>Ihrem</strong> OneDrive (Apps/DASH)</td></tr>
-  <tr><td>Ort für das Wetter</td><td>Vorhersage anzeigen</td><td>Auf Ihrem Gerät</td></tr>
-</table>
-<p>Die Anmeldung erfolgt auf der offiziellen Microsoft-Seite: DASH sieht und speichert Ihr Passwort nie.
-Zugriffstoken bleiben auf dem Gerät und werden beim Abmelden gelöscht.</p>
-
-<h2>Künstliche Intelligenz (optional)</h2>
-<p>Wenn Sie die KI aktivieren, übermittelt DASH <strong>den Betreff und einen Auszug von höchstens 2.000 Zeichen</strong>
-der betreffenden Nachrichten an den von Ihnen gewählten Dienst, um Signale zusammenzufassen und Besprechungen
-vorzubereiten:</p>
-<ul>
-  <li><strong>Microsoft 365 Copilot</strong> – innerhalb Ihres Microsoft 365, zu den Bedingungen Ihres Microsoft-Vertrags;</li>
-  <li><strong>Anthropic (Claude)</strong> – mit dem API-Schlüssel, den Sie selbst eingeben, zu den gewerblichen
-    Bedingungen von Anthropic; Anthropic verwendet über die API erhaltene Daten nicht zum Training seiner Modelle.</li>
-</ul>
-<p>Sie können die KI jederzeit in den Einstellungen wieder ausschalten.</p>
-
-<h2>Weitere genutzte Dienste</h2>
-<ul>
-  <li><strong>Microsoft Graph</strong> (Microsoft Corporation): Lesen Ihrer Kontodaten und Synchronisierung über OneDrive.</li>
-  <li><strong>Open-Meteo</strong>: Wettervorhersage und Ortssuche; der Dienst erhält nur Koordinaten oder den Ortsnamen.</li>
-  <li><strong>ipwho.is</strong> und ersatzweise <strong>BigDataCloud</strong>: nur wenn Sie das Wetter auf „Automatisch“
-    stellen, um Ihren Ort anhand der IP-Adresse zu schätzen. DASH nutzt kein GPS des Geräts.</li>
-</ul>
-<p>Diese Dienste können ihren Sitz auch außerhalb der Europäischen Union haben; eine Übermittlung erfolgt dann auf
-Grundlage der Garantien der DSGVO (Angemessenheitsbeschluss oder Standardvertragsklauseln).</p>
-
-<h2>Rechtsgrundlage und Speicherdauer</h2>
-<p>Die Verarbeitung dient der Bereitstellung des Dienstes, den Sie durch Installation und Verbindung der App angefordert
-haben (Art. 6 Abs. 1 lit. b DSGVO); KI und automatisches Wetter beruhen auf Ihrer Entscheidung, sie zu aktivieren. Die
-Daten bleiben auf dem Gerät, solange Sie DASH nutzen, und werden mit der Deinstallation der App gelöscht (unter Windows
-und auf dem Mac auch durch Löschen des DASH-Datenordners); beim Abmelden werden die Zugriffstoken gelöscht. Die Datei im
-Ordner Apps/DASH Ihres OneDrive können Sie jederzeit löschen.</p>
-
-<h2>Minderjährige</h2>
-<p>DASH ist ein Arbeitswerkzeug und richtet sich nicht an Personen unter 16 Jahren.</p>
-
-<h2>Ihre Rechte</h2>
-<p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und
-Datenübertragbarkeit sowie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren – insbesondere in dem
-Land, in dem Sie wohnen oder arbeiten. Für Anfragen schreiben Sie bitte an <span class="em">dash.privacy [at] tmac.it</span>.
-Die DASH erteilten Berechtigungen können Sie jederzeit unter <a href="https://myapps.microsoft.com">myapps.microsoft.com</a>
-oder über Ihre Microsoft-365-Administration widerrufen.</p>
-
-<h2>Änderungen</h2>
-<p>Ändert sich diese Erklärung, wird die neue Fassung mit dem Datum der Aktualisierung auf dieser Seite veröffentlicht.</p>
+<div class="marchio"><img src="assets/mark-128.png" alt=""><b>DASH</b><span>Deadlines, Approvals and Signals Hub · by TMAC</span></div>
+<img class="copertina" src="img/testata-de.jpg" alt="DASH auf iPad, iPhone und iPhone Duo: Nichts bleibt mehr liegen.">
+<p class="intro">Jeden Morgen zeigt Ihnen DASH, was überfällig ist, welche Freigaben hängen, wer auf Ihre Antwort wartet und
+worauf Sie selbst noch warten. Die App liest E-Mails, Kalender und Aufgaben aus Ihrem Microsoft 365 – Sie müssen nichts eingeben.</p>
+<div class="schede">
+  <a class="scheda" href="assistance.html#de"><h2>Handbuch und Support</h2><p>Das Handbuch online oder als PDF, erste Schritte, häufige Fragen und Kontakt.</p></a>
+  <a class="scheda" href="privacy.html#de"><h2>Datenschutzerklärung</h2><p>Welche Daten DASH nutzt, wo sie bleiben und Ihre Rechte. TMAC sieht Ihre Daten nicht.</p></a>
+  <a class="scheda" href="assistance.html#de"><h2>Für die Administration</h2><p>So registrieren Sie DASH einmalig für die ganze Organisation in Microsoft Entra ID.</p></a>
+</div>
+<p class="piede">TMAC S.r.l.s. – Via Legnano 27, 10128 Turin (TO), Italien – USt-IdNr. IT13174990013</p>
 </article>
 </main>
-<script>/* indirizzo composto nella pagina: i programmi che raccolgono e-mail non lo trovano */
-document.querySelectorAll(".em").forEach(function (e) { var a = document.createElement("a"), x = ["dash.privacy", "tmac.it"].join(String.fromCharCode(64)); a.href = "mai" + "lto:" + x; a.textContent = x; e.replaceWith(a); });
-/* lingua: quella scelta (#it, #en, #fr, #de), altrimenti quella del browser, altrimenti l'inglese */
+<script>
 (function () {
   var lingue = ['it', 'en', 'fr', 'de'];
-  var titoli = { it: 'DASH – Informativa sulla privacy', en: 'DASH – Privacy Policy', fr: 'DASH – Politique de confidentialité', de: 'DASH – Datenschutzerklärung' };
   function scelta() {
     var h = location.hash.slice(1);
     if (lingue.indexOf(h) >= 0) return h;
@@ -350,8 +103,7 @@ document.querySelectorAll(".em").forEach(function (e) { var a = document.createE
     var l = scelta();
     document.querySelectorAll('article').forEach(function (a) { a.classList.toggle('attiva', a.id === l); });
     document.querySelectorAll('nav a').forEach(function (a) { a.classList.toggle('attiva', a.getAttribute('href') === '#' + l); });
-    document.documentElement.lang = l; document.title = titoli[l];
-    // il browser salta all'ancora della lingua: si torna in cima, dove ci sono i pulsanti
+    document.documentElement.lang = l;
     window.scrollTo(0, 0); setTimeout(function () { window.scrollTo(0, 0); }, 0);
   }
   window.addEventListener('hashchange', mostra);
