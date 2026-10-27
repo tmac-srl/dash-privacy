@@ -45,7 +45,7 @@
   <img src="../assets/icona-dash.svg" alt="">
   <h1 style="margin-top:14pt">DASH</h1>
   <div class="acr"><b>D</b>eadlines, <b>A</b>pprovals and <b>S</b>ignals <b>H</b>ub</div>
-  <div class="sotto">Benutzerhandbuch · Version 1.6.3<br>Installation, erste Anmeldung und tägliche Nutzung</div>
+  <div class="sotto">Benutzerhandbuch · Version 1.6.4<br>Installation, erste Anmeldung und tägliche Nutzung</div>
   <div class="tmac"><img src="../assets/mark-128.png" alt=""> by TMAC</div>
 </section>
 
@@ -86,14 +86,14 @@
 <ul>
   <li>Einen PC mit <b>Windows 10 oder 11</b> oder einen <b>Mac mit Apple-Prozessor</b> (M1 oder neuer; Kapitel 12) und, wenn Sie möchten, ein <b>iPhone</b> oder ein <b>Android</b>-Telefon (Kapitel 13).</li>
   <li>Ein <b>Microsoft 365</b>-Konto Ihrer Organisation (Outlook-E-Mail und -Kalender).</li>
-  <li>Die Installationsdatei <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Die Installationsdatei <code>DASH-Setup-1.6.4.exe</code>.</li>
   <li>Die <b>Client-ID</b> und den <b>Tenant</b> von DASH für Ihre Organisation: Sie erhalten sie von Ihrem Microsoft 365-Administrator (siehe Anhang).</li>
   <li>Optional, für die künstliche Intelligenz: eine <b>Microsoft 365 Copilot</b>-Lizenz oder ein Schlüssel für die <b>Anthropic-API</b> (siehe Kapitel 9).</li>
 </ul>
 
 <h2>3. Installation</h2>
 <ol>
-  <li>Doppelklicken Sie auf <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Doppelklicken Sie auf <code>DASH-Setup-1.6.4.exe</code>.</li>
   <li>Wenn Windows «<b>Der Computer wurde durch Windows geschützt</b>» anzeigt (SmartScreen), klicken Sie auf <b>Weitere Informationen</b> und dann auf <b>Trotzdem ausführen</b>. Die Warnung erscheint, weil das Programm noch nicht digital signiert ist: Fahren Sie nur fort, wenn Sie die Datei aus einer vertrauenswürdigen Quelle erhalten haben.</li>
   <li>Wählen Sie, ob nur für Sie installiert werden soll (empfohlen), und den Ordner, dann <b>Installieren</b>. Administratorrechte sind nicht nötig.</li>
   <li>Am Ende startet DASH von selbst. Das Symbol finden Sie auf dem Desktop und im Startmenü.</li>
@@ -109,6 +109,7 @@
   <li>Kehren Sie zu DASH zurück: Nach wenigen Sekunden erscheinen Begrüßung, Agenda und Radar.</li>
 </ol>
 <div class="nota">DASH nutzt das Microsoft 365 <b>Ihrer</b> Organisation: Ihre Daten bleiben zwischen Ihrem PC und Ihrem Tenant. Client-ID und Tenant können Sie jederzeit in den Einstellungen ändern (Kapitel 10).</div>
+<div class="nota"><b>DASH ohne Microsoft 365 ausprobieren:</b> Geben Sie im Feld Application (client) ID <code>demo</code> ein (kein Tenant nötig), klicken Sie auf <b>Speichern</b> und dann auf <b>Anmelden</b>. DASH zeigt Beispieldaten in der Sprache der App, mit dem Hinweis „Demo-Modus“ immer im Blick; es verbindet sich nicht mit Microsoft und lässt Ihre Daten und Regeln unberührt. Zum Beenden: <b>Demo beenden</b>, oder das Feld leeren bzw. Ihre Client-ID eingeben.</div>
 
 <h2 class="salto">5. Das DASH-Fenster</h2>
 <div class="fig">
@@ -157,8 +158,11 @@
 <p>Um <b>8:30</b> an Arbeitstagen sendet DASH eine Benachrichtigung, die auf dem Bildschirm bleibt, bis Sie sie schließen, und zeigt oben im Radar den Kasten <b>„Das Radar von heute“</b>: die offenen Punkte vom Morgen, nach Block geordnet („Überfällig“ und „Blockierte Genehmigungen“ geöffnet, die anderen mit einem Klick). Im Laufe des Tages aktualisiert sich der Kasten: Erledigtes bleibt <b>durchgestrichen mit ✓</b>, später Eingetroffenes erscheint mit dem Hinweis <b>„neu“</b>, und oben sehen Sie, wie viel Sie erledigt haben („3 von 9 erledigt“). Ein Klick auf einen Eintrag öffnet ihn; ein Klick auf den Titel verkleinert den Kasten auf eine Zeile und öffnet ihn wieder. Der Text der Zusammenfassung ist vorerst auf Italienisch. Die Zusammenfassung lässt sich in den Radar-Regeln ausschalten.</p>
 
 <h3>Das Radar nach Kontakt</h3>
-<p>Oben im Radar wählen Sie <b>„Nach Art“</b> (die vier Blöcke) oder <b>„Nach Kontakt“</b>. In der zweiten Ansicht gruppiert DASH die Signale selbst: nach <b>Firma</b> für Absender von außen (aus der Domain der E-Mail: boggi.it wird „Boggi“), nach <b>Person</b> für Kollegen und private Postfächer. Jede Gruppe zeigt, was offen ist, zum Beispiel „Boggi · 2 warten auf Sie · 1 überfällig“.</p>
+<p>Oben im Radar wählen Sie <b>„Nach Art“</b> (die vier Blöcke) oder <b>„Nach Kontakt“</b>. In der zweiten Ansicht gruppiert DASH die Signale selbst: nach <b>Firma</b> für Absender von außen (aus der Domain der E-Mail: alfa-assicurazioni.it wird „Alfa Assicurazioni“), nach <b>Person</b> für Kollegen und private Postfächer. Jede Gruppe zeigt, was offen ist, zum Beispiel „Alfa Assicurazioni · 2 warten auf Sie · 1 überfällig“.</p>
 <p>Es muss nichts eingerichtet werden. Ist eine Gruppe falsch, öffnen Sie das Signal und wählen <b>Verschieben nach…</b>: Gruppennamen eingeben (auch einen neuen, zum Beispiel „Verwaltung“) und wählen, ob es nur für diese Person oder für die ganze Firma gilt. <b>Automatische Gruppe</b> kehrt zum Vorschlag von DASH zurück. Die Auswahl wird mit Ihren anderen Geräten synchronisiert.</p>
+<h3>Outlook-Kennzeichnungen und -Kategorien</h3>
+<p>Eine E-Mail, die Sie in Outlook zur Nachverfolgung <b>kennzeichnen</b> (die Fahne), wird im Radar zu einer <b>Aufgabe</b>: unter „Warten auf mich“ oder, sobald das Fälligkeitsdatum der Kennzeichnung überschritten ist, unter „Überfällig“. Eine gekennzeichnete gesendete E-Mail erscheint unter „Ich warte auf“ als Nachverfolgung. Wenn Sie die Kennzeichnung in Outlook als <b>erledigt</b> markieren, schließt sich das Signal von selbst. Die Kategorie <b>„DASH: importante“</b> bringt eine E-Mail ins Radar, auch wenn eine Regel sie ausschließen würde; „DASH: ignora“ bewirkt das Gegenteil.</p>
+<p>Mit der Option <b>E-Mails aus DASH kennzeichnen</b> (Kapitel 7) zeigen die Signale <b>Kennzeichnen</b> und <b>Erledigt</b>: Die Kennzeichnung wird auch in Outlook gesetzt und erledigt.</p>
 <h3>Bereit für das Meeting</h3>
 <p>In der Agenda steht neben Meetings mit anderen Personen <b>Vorbereiten</b>. Es öffnet eine Karte, die in einer Minute gelesen ist: was mit den Teilnehmern <b>offen</b> ist (auch mit ihren Kollegen derselben Firma) und die <b>letzten Nachrichten</b> der vergangenen zwei Wochen, jeweils mit einem Klick zu öffnen. Mit eingeschalteter KI erscheinen oben auch <b>3 Zeilen Zusammenfassung</b>: Die KI erhält nur Betreffs und Details, nie den Text der E-Mails.</p>
 <p><b>15 Minuten vor</b> dem Meeting kommt eine Benachrichtigung: Ein Klick öffnet die Karte. Die Erinnerung lässt sich in den Radar-Regeln ausschalten.</p>
@@ -176,6 +180,9 @@
       <li><b>Erinnerung 15 Minuten vor Meetings</b>: schaltet die Benachrichtigung „Bereit für das Meeting“ ein oder aus.</li>
       <li><b>Auch Microsoft Teams lesen</b>: siehe Kapitel 8.</li>
       <li><b>Zu ignorierende Outlook-Kategorien</b>: E-Mails mit diesen Kategorien kommen nicht ins Radar (standardmäßig «DASH: ignora»).</li>
+      <li><b>Wichtige Outlook-Kategorien</b>: E-Mails mit diesen Kategorien erscheinen immer im Radar, auch wenn eine Regel sie ausschließen würde (standardmäßig «DASH: importante»).</li>
+      <li><b>Nach Outlook-Kategorie gruppieren</b>: In der Ansicht „Nach Kontakt“ landen E-Mails mit einer Kategorie (z. B. „Projekt Alfa“) in der Gruppe dieser Kategorie.</li>
+      <li><b>E-Mails aus DASH kennzeichnen</b>: Schaltflächen Kennzeichnen und Erledigt an den Signalen. Erfordert die Berechtigung zum Ändern von E-Mails (Anhang) und eine neue Anmeldung.</li>
     </ul>
   </div>
 </div>
@@ -279,7 +286,7 @@
 
 <h3>Installation und erster Start</h3>
 <ol>
-  <li>Doppelklicken Sie auf die Datei <code>DASH-1.6.3-mac.dmg</code>.</li>
+  <li>Doppelklicken Sie auf die Datei <code>DASH-1.6.4-mac.dmg</code>.</li>
   <li>Ziehen Sie im erscheinenden Fenster <b>das DASH-Symbol</b> auf den Ordner <b>Programme</b>. Schließen Sie dann das Fenster und werfen Sie das Laufwerk «DASH» aus (Rechtsklick › Auswerfen).</li>
   <li>Öffnen Sie <b>Programme</b> und doppelklicken Sie auf <b>DASH</b>.</li>
   <li>Meldet macOS, dass es DASH <b>nicht öffnen kann</b>, weil der Entwickler nicht verifiziert ist: Gehen Sie zu <b>Systemeinstellungen › Datenschutz &amp; Sicherheit</b>, scrollen Sie nach unten zu «DASH wurde blockiert…», klicken Sie auf <b>Dennoch öffnen</b> und bestätigen Sie mit dem Mac-Passwort. Das passiert nur beim ersten Mal.</li>
@@ -303,7 +310,7 @@
 <p>Auf Android-Telefonen ist DASH <b>dieselbe App wie auf dem iPhone</b>: dieselbe Oberfläche, dasselbe Radar, dieselben Aktionen, dieselben Regeln, dieselbe künstliche Intelligenz und dieselbe Synchronisierung. Es gilt daher das ganze Kapitel 11, einschließlich der <b>zwei Spalten</b> im Querformat oder auf aufgeklappten Faltgeräten. Benötigt wird Android 7 oder neuer.</p>
 
 <h3>Installation</h3>
-<p>Vorerst gibt es DASH für Android nicht im Play Store: Sie installieren es aus der Datei <code>DASH-1.6.3-android.apk</code>, die Sie per E-Mail, OneDrive oder Teams erhalten.</p>
+<p>Vorerst gibt es DASH für Android nicht im Play Store: Sie installieren es aus der Datei <code>DASH-1.6.4-android.apk</code>, die Sie per E-Mail, OneDrive oder Teams erhalten.</p>
 <ol>
   <li>Öffnen Sie die Datei <b>auf dem Telefon</b> (tippen Sie auf den Anhang oder die Datei in OneDrive).</li>
   <li>Android bittet Sie, die Installation aus dieser App zu erlauben (zum Beispiel Outlook oder Browser): Tippen Sie auf <b>Einstellungen</b>, schalten Sie <b>Dieser Quelle vertrauen</b> ein und gehen Sie zurück.</li>
@@ -371,6 +378,7 @@
   <tr><td>Mit eingeschaltetem Teams</td><td><code>Chat.Read</code>, <code>Team.ReadBasic.All</code>, <code>Channel.ReadBasic.All</code>, <code>ChannelMessage.Read.All</code></td></tr>
   <tr><td>Mit Synchronisierung zwischen Geräten</td><td><code>Files.ReadWrite.AppFolder</code> (nur der DASH-Ordner im OneDrive des Benutzers, Apps › DASH)</td></tr>
   <tr><td>Mit dem Copilot-Modul</td><td><code>Sites.Read.All</code>, <code>People.Read.All</code>, <code>OnlineMeetingTranscript.Read.All</code>, <code>Chat.Read</code>, <code>ChannelMessage.Read.All</code>, <code>ExternalItem.Read.All</code> (alle von der Microsoft 365 Copilot Chat-API verlangt)</td></tr>
+  <tr><td>Mit „E-Mails aus DASH kennzeichnen“</td><td><code>Mail.ReadWrite</code> (nur zum Setzen und Entfernen der Outlook-Kennzeichnung; DASH löscht und versendet keine E-Mails)</td></tr>
 </table>
 <p>Nach dem Hinzufügen: <b>Administratorzustimmung erteilen</b> für die Organisation. Die Berechtigungen für Teams, Copilot und Synchronisierung werden von den Benutzern nur angefordert, wenn sie diese Funktionen einschalten.</p>
 <p>Für die <b>iPhone-App</b>: Fügen Sie unter <b>Authentifizierung</b> auch die Plattform <b>iOS / macOS</b> mit der Bundle-ID <code>it.tmac.dash</code> hinzu.</p>

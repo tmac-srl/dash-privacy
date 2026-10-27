@@ -45,7 +45,7 @@
   <img src="../assets/icona-dash.svg" alt="">
   <h1 style="margin-top:14pt">DASH</h1>
   <div class="acr"><b>D</b>eadlines, <b>A</b>pprovals and <b>S</b>ignals <b>H</b>ub</div>
-  <div class="sotto">User manual · version 1.6.3<br>Installation, first sign-in and everyday use</div>
+  <div class="sotto">User manual · version 1.6.4<br>Installation, first sign-in and everyday use</div>
   <div class="tmac"><img src="../assets/mark-128.png" alt=""> by TMAC</div>
 </section>
 
@@ -86,14 +86,14 @@
 <ul>
   <li>A PC with <b>Windows 10 or 11</b> or a <b>Mac with an Apple processor</b> (M1 or later; chapter 12) and, if you wish, an <b>iPhone</b> or an <b>Android</b> phone (chapter 13).</li>
   <li>A <b>Microsoft 365</b> account from your organisation (Outlook mail and calendar).</li>
-  <li>The installation file <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>The installation file <code>DASH-Setup-1.6.4.exe</code>.</li>
   <li>Your organisation’s DASH <b>Client ID</b> and <b>Tenant</b>: your Microsoft 365 administrator gives them to you (see Appendix).</li>
   <li>Optional, for artificial intelligence: a <b>Microsoft 365 Copilot</b> licence or an <b>Anthropic API</b> key (see chapter 9).</li>
 </ul>
 
 <h2>3. Installation</h2>
 <ol>
-  <li>Double-click <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Double-click <code>DASH-Setup-1.6.4.exe</code>.</li>
   <li>If Windows shows «<b>Windows protected your PC</b>» (SmartScreen), click <b>More info</b> and then <b>Run anyway</b>. The warning appears because the program is not yet digitally signed: only go ahead if you received the file from a source you trust.</li>
   <li>Choose whether to install just for you (recommended) and the folder, then <b>Install</b>. No administrator rights are needed.</li>
   <li>When it finishes, DASH starts on its own. You will find its icon on the desktop and in the Start menu.</li>
@@ -109,6 +109,7 @@
   <li>Go back to DASH: after a few seconds the greeting, agenda and Radar appear.</li>
 </ol>
 <div class="nota">DASH uses <b>your</b> organisation’s Microsoft 365: your data stays between your PC and your tenant. You can change Client ID and Tenant at any time in Settings (chapter 10).</div>
+<div class="nota"><b>Try DASH without Microsoft 365:</b> type <code>demo</code> in the Application (client) ID field (no Tenant needed), click <b>Save</b> and then <b>Sign in</b>. DASH shows sample data, in the app’s language, with the “Demo mode” bar always visible; it doesn’t connect to Microsoft and doesn’t touch your data or rules. To leave: <b>Leave demo</b>, or clear the field or enter your Client ID.</div>
 
 <h2 class="salto">5. The DASH window</h2>
 <div class="fig">
@@ -157,8 +158,11 @@
 <p>At <b>8:30</b> on working days DASH sends a notification, which stays on screen until you close it, and puts the <b>“Today’s Radar”</b> box at the top of the Radar: the morning’s pending items, split by block (“Overdue” and “Stalled approvals” open, the others with one click). During the day the box updates itself: what you close stays <b>crossed out with ✓</b>, what arrives later appears with the <b>“new”</b> label, and at the top you see how much you have done (“3 of 9 done”). Click an item to open it; click the title to reduce the box to one line and to open it again. For now the summary text is in Italian. You can turn the summary off in Radar rules.</p>
 
 <h3>The Radar by contact</h3>
-<p>At the top of the Radar choose <b>“By type”</b> (the four blocks) or <b>“By contact”</b>. In the second view DASH groups the signals on its own: by <b>company</b> for people writing from outside (from the email domain: boggi.it becomes “Boggi”), by <b>person</b> for colleagues and personal mailboxes. Each group says what is pending, for example “Boggi · 2 waiting for you · 1 overdue”.</p>
+<p>At the top of the Radar choose <b>“By type”</b> (the four blocks) or <b>“By contact”</b>. In the second view DASH groups the signals on its own: by <b>company</b> for people writing from outside (from the email domain: alfa-assicurazioni.it becomes “Alfa Assicurazioni”), by <b>person</b> for colleagues and personal mailboxes. Each group says what is pending, for example “Alfa Assicurazioni · 2 waiting for you · 1 overdue”.</p>
 <p>Nothing to set up. If a group is wrong, open the signal and use <b>Move to…</b>: type the group name (also a new one, for example “Administration”) and choose whether it applies only to that person or to their whole company. <b>Automatic group</b> goes back to DASH’s suggestion. Your choices sync with your other devices.</p>
+<h3>Outlook flags and categories</h3>
+<p>An email you flag in Outlook becomes a <b>to-do</b> in the Radar: under “Waiting on me”, or under “Overdue” once the flag’s due date has passed. A flagged sent email goes under “I’m waiting on” as a follow-up. When you mark the flag as <b>complete</b> in Outlook, the signal closes on its own. The <b>“DASH: importante”</b> category brings an email into the Radar even if a rule would exclude it; “DASH: ignora” does the opposite.</p>
+<p>With <b>Flag emails from DASH</b> turned on (chapter 7), signals show <b>Flag</b> and <b>Complete</b>: the flag is set and completed in Outlook too.</p>
 <h3>Ready for the meeting</h3>
 <p>In the Agenda, next to meetings with other people, there is <b>Prepare</b>. It opens a card you can read in a minute: what is <b>pending</b> with the participants (also with their colleagues at the same company) and the <b>latest exchanges</b> of the last two weeks, each one opens with a click. With artificial intelligence on, <b>3 summary lines</b> also appear at the top: the AI only receives subjects and details, never the text of emails.</p>
 <p><b>15 minutes before</b> the meeting a notification arrives: click it to open the card. You can turn the reminder off in Radar rules.</p>
@@ -176,6 +180,9 @@
       <li><b>Reminder 15 minutes before meetings</b>: turns the “Ready for the meeting” notification on or off.</li>
       <li><b>Also read Microsoft Teams</b>: see chapter 8.</li>
       <li><b>Outlook categories to ignore</b>: emails with these categories do not enter the Radar (by default «DASH: ignora»).</li>
+      <li><b>Important Outlook categories</b>: emails with these categories always appear in the Radar, even if a rule would exclude them (by default «DASH: importante»).</li>
+      <li><b>Group by Outlook category</b>: in the “By contact” view, emails with a category (e.g. “Alfa project”) go into that category’s group.</li>
+      <li><b>Flag emails from DASH</b>: Flag and Complete buttons on signals. Requires the permission to modify mail (appendix) and a new sign-in.</li>
     </ul>
   </div>
 </div>
@@ -279,7 +286,7 @@
 
 <h3>Installation and first start</h3>
 <ol>
-  <li>Double-click the file <code>DASH-1.6.3-mac.dmg</code>.</li>
+  <li>Double-click the file <code>DASH-1.6.4-mac.dmg</code>.</li>
   <li>In the window that appears, <b>drag the DASH icon</b> onto the <b>Applications</b> folder. Then close the window and eject the «DASH» disk (right-click › Eject).</li>
   <li>Open <b>Applications</b> and double-click <b>DASH</b>.</li>
   <li>If macOS says it <b>cannot open it</b> because the developer cannot be verified: go to <b>System Settings › Privacy &amp; Security</b>, scroll down to «DASH was blocked…», click <b>Open Anyway</b> and confirm with your Mac password. This only happens the first time.</li>
@@ -303,7 +310,7 @@
 <p>On Android phones DASH is <b>the same app as on iPhone</b>: same interface, same Radar, same actions, same rules, same artificial intelligence and same sync. All of chapter 11 therefore applies, including the <b>two columns</b> with the phone in landscape or on open foldables. Android 7 or later is required.</p>
 
 <h3>Installation</h3>
-<p>For now DASH for Android is not on the Play Store: you install it from the file <code>DASH-1.6.3-android.apk</code>, which you receive by email, OneDrive or Teams.</p>
+<p>For now DASH for Android is not on the Play Store: you install it from the file <code>DASH-1.6.4-android.apk</code>, which you receive by email, OneDrive or Teams.</p>
 <ol>
   <li>Open the file <b>on the phone</b> (tap the attachment or the file in OneDrive).</li>
   <li>Android asks you to allow installation from that app (for example Outlook or the browser): tap <b>Settings</b>, turn on <b>Allow from this source</b> and go back.</li>
@@ -371,6 +378,7 @@
   <tr><td>With Teams on</td><td><code>Chat.Read</code>, <code>Team.ReadBasic.All</code>, <code>Channel.ReadBasic.All</code>, <code>ChannelMessage.Read.All</code></td></tr>
   <tr><td>With sync between devices</td><td><code>Files.ReadWrite.AppFolder</code> (only the DASH folder in the user’s OneDrive, Apps › DASH)</td></tr>
   <tr><td>With the Copilot engine</td><td><code>Sites.Read.All</code>, <code>People.Read.All</code>, <code>OnlineMeetingTranscript.Read.All</code>, <code>Chat.Read</code>, <code>ChannelMessage.Read.All</code>, <code>ExternalItem.Read.All</code> (all required by the Microsoft 365 Copilot Chat API)</td></tr>
+  <tr><td>With “Flag emails from DASH”</td><td><code>Mail.ReadWrite</code> (only to set and clear the Outlook flag; DASH never deletes or sends email)</td></tr>
 </table>
 <p>After adding them: <b>Grant admin consent</b> for the organisation. Teams, Copilot and sync permissions are requested from users only if they turn those features on.</p>
 <p>For the <b>iPhone app</b>: in <b>Authentication</b> also add the <b>iOS / macOS</b> platform with Bundle ID <code>it.tmac.dash</code>.</p>

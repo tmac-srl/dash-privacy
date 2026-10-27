@@ -45,7 +45,7 @@
   <img src="../assets/icona-dash.svg" alt="">
   <h1 style="margin-top:14pt">DASH</h1>
   <div class="acr"><b>D</b>eadlines, <b>A</b>pprovals and <b>S</b>ignals <b>H</b>ub</div>
-  <div class="sotto">Manuel utilisateur · version 1.6.3<br>Installation, première connexion et utilisation quotidienne</div>
+  <div class="sotto">Manuel utilisateur · version 1.6.4<br>Installation, première connexion et utilisation quotidienne</div>
   <div class="tmac"><img src="../assets/mark-128.png" alt=""> by TMAC</div>
 </section>
 
@@ -86,14 +86,14 @@
 <ul>
   <li>Un PC sous <b>Windows 10 ou 11</b> ou un <b>Mac avec processeur Apple</b> (M1 ou plus récent ; chapitre 12) et, si vous le souhaitez, un <b>iPhone</b> ou un téléphone <b>Android</b> (chapitre 13).</li>
   <li>Un compte <b>Microsoft 365</b> de votre organisation (e-mail et calendrier Outlook).</li>
-  <li>Le fichier d’installation <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Le fichier d’installation <code>DASH-Setup-1.6.4.exe</code>.</li>
   <li>Le <b>Client ID</b> et le <b>Tenant</b> de DASH pour votre organisation : votre administrateur Microsoft 365 vous les communique (voir Annexe).</li>
   <li>Facultatif, pour l’intelligence artificielle : la licence <b>Microsoft 365 Copilot</b> ou une clé de l’<b>API d’Anthropic</b> (voir chapitre 9).</li>
 </ul>
 
 <h2>3. Installation</h2>
 <ol>
-  <li>Double-cliquez sur <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Double-cliquez sur <code>DASH-Setup-1.6.4.exe</code>.</li>
   <li>Si Windows affiche « <b>Windows a protégé votre ordinateur</b> » (SmartScreen), cliquez sur <b>Informations complémentaires</b> puis sur <b>Exécuter quand même</b>. L’avertissement apparaît parce que le programme n’est pas encore signé numériquement : ne continuez que si vous avez reçu le fichier d’une source de confiance.</li>
   <li>Choisissez d’installer pour vous seul (recommandé) et le dossier, puis <b>Installer</b>. Aucun droit d’administrateur n’est nécessaire.</li>
   <li>À la fin, DASH démarre tout seul. Vous trouvez son icône sur le bureau et dans le menu Démarrer.</li>
@@ -109,6 +109,7 @@
   <li>Revenez sur DASH : après quelques secondes apparaissent le message d’accueil, l’agenda et le Radar.</li>
 </ol>
 <div class="nota">DASH utilise le Microsoft 365 de <b>votre</b> organisation : vos données restent entre votre PC et votre tenant. Le Client ID et le Tenant se modifient à tout moment dans les Paramètres (chapitre 10).</div>
+<div class="nota"><b>Essayer DASH sans Microsoft 365 :</b> saisissez <code>demo</code> dans le champ Application (client) ID (le Tenant n’est pas nécessaire), cliquez sur <b>Enregistrer</b> puis sur <b>Se connecter</b>. DASH affiche des données d’exemple, dans la langue de l’application, avec la bande « Mode démo » toujours visible ; il ne se connecte pas à Microsoft et ne touche ni à vos données ni à vos règles. Pour sortir : <b>Quitter la démo</b>, ou videz le champ, ou saisissez votre Client ID.</div>
 
 <h2 class="salto">5. La fenêtre de DASH</h2>
 <div class="fig">
@@ -157,8 +158,11 @@
 <p>À <b>8 h 30</b> les jours ouvrés, DASH envoie une notification, qui reste à l’écran jusqu’à ce que vous la fermiez, et place en haut du Radar l’encadré <b>« Le Radar du jour »</b> : les points en suspens du matin, par bloc (« En retard » et « Approbations bloquées » ouverts, les autres d’un clic). Pendant la journée l’encadré se met à jour : ce que vous fermez reste <b>barré avec ✓</b>, ce qui arrive ensuite apparaît avec l’étiquette <b>« nouveau »</b> et en haut vous voyez ce que vous avez fait (« 3 sur 9 faites »). Un clic sur un élément l’ouvre ; un clic sur le titre réduit l’encadré à une ligne et le rouvre. Pour l’instant, le texte du résumé est en italien. Le résumé se désactive dans les Règles du Radar.</p>
 
 <h3>Le Radar par interlocuteur</h3>
-<p>En haut du Radar, choisissez <b>« Par type »</b> (les quatre blocs) ou <b>« Par interlocuteur »</b>. Dans la seconde vue, DASH regroupe lui-même les signaux : par <b>entreprise</b> pour ceux qui écrivent de l’extérieur (d’après le domaine de l’e-mail : boggi.it devient « Boggi »), par <b>personne</b> pour les collègues et les boîtes personnelles. Chaque groupe indique ce qui est en suspens, par exemple « Boggi · 2 vous attendent · 1 en retard ».</p>
+<p>En haut du Radar, choisissez <b>« Par type »</b> (les quatre blocs) ou <b>« Par interlocuteur »</b>. Dans la seconde vue, DASH regroupe lui-même les signaux : par <b>entreprise</b> pour ceux qui écrivent de l’extérieur (d’après le domaine de l’e-mail : alfa-assicurazioni.it devient « Alfa Assicurazioni »), par <b>personne</b> pour les collègues et les boîtes personnelles. Chaque groupe indique ce qui est en suspens, par exemple « Alfa Assicurazioni · 2 vous attendent · 1 en retard ».</p>
 <p>Rien à configurer. Si un groupe est faux, ouvrez le signal et utilisez <b>Déplacer vers…</b> : saisissez le nom du groupe (même nouveau, par exemple « Administration ») et choisissez si cela vaut seulement pour cette personne ou pour toute son entreprise. <b>Groupe automatique</b> revient à la proposition de DASH. Vos choix se synchronisent avec vos autres appareils.</p>
+<h3>Indicateurs et catégories d’Outlook</h3>
+<p>Un message que vous marquez d’un <b>indicateur</b> (le drapeau) dans Outlook devient une <b>tâche</b> dans le Radar : dans « On m’attend », ou dans « En retard » une fois l’échéance de l’indicateur dépassée. Un message envoyé marqué rejoint « J’attends » comme suivi à faire. Quand vous marquez l’indicateur comme <b>terminé</b> dans Outlook, le signal se ferme tout seul. La catégorie <b>« DASH: importante »</b> fait entrer un message dans le Radar même si une règle l’exclurait ; « DASH: ignora » fait l’inverse.</p>
+<p>Avec l’option <b>Marquer les messages depuis DASH</b> (chapitre 7), les signaux affichent <b>Marquer</b> et <b>Terminé</b> : l’indicateur est aussi posé et terminé dans Outlook.</p>
 <h3>Prêt pour la réunion</h3>
 <p>Dans l’Agenda, à côté des réunions avec d’autres personnes, il y a <b>Préparer</b>. Cela ouvre une fiche qui se lit en une minute : ce qui est <b>en suspens</b> avec les participants (y compris leurs collègues de la même entreprise) et les <b>derniers échanges</b> des deux dernières semaines, chacun s’ouvre d’un clic. Avec l’intelligence artificielle active, <b>3 lignes de synthèse</b> apparaissent aussi en haut : l’IA ne reçoit que les objets et les détails, jamais le texte des e-mails.</p>
 <p><b>15 minutes avant</b> la réunion, une notification arrive : cliquez dessus pour ouvrir la fiche. Le rappel se désactive dans les Règles du Radar.</p>
@@ -176,6 +180,9 @@
       <li><b>Rappel 15 minutes avant les réunions</b> : active ou désactive la notification « Prêt pour la réunion ».</li>
       <li><b>Lire aussi Microsoft Teams</b> : voir chapitre 8.</li>
       <li><b>Catégories Outlook à ignorer</b> : les e-mails avec ces catégories n’entrent pas dans le Radar (par défaut « DASH: ignora »).</li>
+      <li><b>Catégories Outlook importantes</b> : les messages portant ces catégories apparaissent toujours dans le Radar, même si une règle les exclurait (par défaut « DASH: importante »).</li>
+      <li><b>Regrouper par catégorie Outlook</b> : dans la vue « Par interlocuteur », les messages portant une catégorie (ex. « Projet Alfa ») rejoignent le groupe de cette catégorie.</li>
+      <li><b>Marquer les messages depuis DASH</b> : boutons Marquer et Terminé sur les signaux. Nécessite l’autorisation de modifier les messages (annexe) et une nouvelle connexion.</li>
     </ul>
   </div>
 </div>
@@ -279,7 +286,7 @@
 
 <h3>Installation et premier démarrage</h3>
 <ol>
-  <li>Double-cliquez sur le fichier <code>DASH-1.6.3-mac.dmg</code>.</li>
+  <li>Double-cliquez sur le fichier <code>DASH-1.6.4-mac.dmg</code>.</li>
   <li>Dans la fenêtre qui apparaît, <b>faites glisser l’icône de DASH</b> sur le dossier <b>Applications</b>. Fermez ensuite la fenêtre et éjectez le disque « DASH » (clic droit › Éjecter).</li>
   <li>Ouvrez <b>Applications</b> et double-cliquez sur <b>DASH</b>.</li>
   <li>Si macOS indique qu’il <b>ne peut pas l’ouvrir</b> parce que le développeur n’est pas vérifié : allez dans <b>Réglages Système › Confidentialité et sécurité</b>, faites défiler jusqu’à « DASH a été bloqué… », cliquez sur <b>Ouvrir quand même</b> et confirmez avec le mot de passe du Mac. Cela n’arrive que la première fois.</li>
@@ -303,7 +310,7 @@
 <p>Sur les téléphones Android, DASH est <b>la même application que sur iPhone</b> : même interface, même Radar, mêmes actions, mêmes règles, même intelligence artificielle et même synchronisation. Tout le chapitre 11 s’applique donc, y compris les <b>deux colonnes</b> avec le téléphone à l’horizontale ou sur les pliables ouverts. Android 7 ou plus récent est nécessaire.</p>
 
 <h3>Installation</h3>
-<p>Pour l’instant DASH pour Android n’est pas sur le Play Store : il s’installe à partir du fichier <code>DASH-1.6.3-android.apk</code>, que vous recevez par e-mail, OneDrive ou Teams.</p>
+<p>Pour l’instant DASH pour Android n’est pas sur le Play Store : il s’installe à partir du fichier <code>DASH-1.6.4-android.apk</code>, que vous recevez par e-mail, OneDrive ou Teams.</p>
 <ol>
   <li>Ouvrez le fichier <b>depuis le téléphone</b> (touchez la pièce jointe ou le fichier dans OneDrive).</li>
   <li>Android vous demande d’autoriser l’installation depuis cette application (par exemple Outlook ou le navigateur) : touchez <b>Paramètres</b>, activez <b>Autoriser cette source</b> et revenez en arrière.</li>
@@ -371,6 +378,7 @@
   <tr><td>Avec Teams activé</td><td><code>Chat.Read</code>, <code>Team.ReadBasic.All</code>, <code>Channel.ReadBasic.All</code>, <code>ChannelMessage.Read.All</code></td></tr>
   <tr><td>Avec la synchronisation entre appareils</td><td><code>Files.ReadWrite.AppFolder</code> (seulement le dossier DASH dans le OneDrive de l’utilisateur, Applications › DASH)</td></tr>
   <tr><td>Avec le moteur Copilot</td><td><code>Sites.Read.All</code>, <code>People.Read.All</code>, <code>OnlineMeetingTranscript.Read.All</code>, <code>Chat.Read</code>, <code>ChannelMessage.Read.All</code>, <code>ExternalItem.Read.All</code> (tous requis par l’API Chat de Microsoft 365 Copilot)</td></tr>
+  <tr><td>Avec « Marquer les messages depuis DASH »</td><td><code>Mail.ReadWrite</code> (uniquement pour poser et retirer l’indicateur d’Outlook ; DASH ne supprime ni n’envoie aucun message)</td></tr>
 </table>
 <p>Après les avoir ajoutées : <b>Accorder le consentement de l’administrateur</b> pour l’organisation. Les autorisations Teams, Copilot et de synchronisation ne sont demandées aux utilisateurs que s’ils activent ces fonctions.</p>
 <p>Pour l’<b>application iPhone</b> : dans <b>Authentification</b>, ajoutez aussi la plateforme <b>iOS / macOS</b> avec le Bundle ID <code>it.tmac.dash</code>.</p>
