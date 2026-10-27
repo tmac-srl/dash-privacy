@@ -351,7 +351,8 @@ document.querySelectorAll(".em").forEach(function (e) { var a = document.createE
     document.querySelectorAll('article').forEach(function (a) { a.classList.toggle('attiva', a.id === l); });
     document.querySelectorAll('nav a').forEach(function (a) { a.classList.toggle('attiva', a.getAttribute('href') === '#' + l); });
     document.documentElement.lang = l; document.title = titoli[l];
-    window.scrollTo(0, 0);
+    // il browser salta all'ancora della lingua: si torna in cima, dove ci sono i pulsanti
+    window.scrollTo(0, 0); setTimeout(function () { window.scrollTo(0, 0); }, 0);
   }
   window.addEventListener('hashchange', mostra);
   mostra();
