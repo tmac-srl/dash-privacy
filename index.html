@@ -40,7 +40,7 @@ mostra cosa è in ritardo, cosa aspetta una tua risposta e cosa stai aspettando 
 </ul>
 
 <h2>Titolare del trattamento</h2>
-<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO), Italia – P. IVA 13174990013 – e-mail: <a href="mailto:rtoniolo@tmac.it">rtoniolo@tmac.it</a>.<br>
+<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO), Italia – P. IVA 13174990013 – e-mail: <span class="em">dash.privacy [at] tmac.it</span>.<br>
 Per le informazioni del tuo account aziendale Microsoft 365 il titolare resta la tua organizzazione: DASH le legge
 solo per tuo conto e con i permessi che tu (o il tuo amministratore) concedi.</p>
 
@@ -90,7 +90,7 @@ eliminarlo quando vuoi.</p>
 <h2>I tuoi diritti</h2>
 <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati, e di proporre
 reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).
-Per qualunque richiesta scrivi a <a href="mailto:rtoniolo@tmac.it">rtoniolo@tmac.it</a>. Puoi anche
+Per qualunque richiesta scrivi a <span class="em">dash.privacy [at] tmac.it</span>. Puoi anche
 revocare in ogni momento i permessi concessi a DASH dalla pagina <a href="https://myapps.microsoft.com">myapps.microsoft.com</a>
 o chiedendo al tuo amministratore Microsoft 365.</p>
 
@@ -115,7 +115,7 @@ what is waiting for your reply and what you are waiting for from others.</p>
 </ul>
 
 <h2>Data controller</h2>
-<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO), Italy – VAT IT13174990013 – e-mail: <a href="mailto:rtoniolo@tmac.it">rtoniolo@tmac.it</a>.<br>
+<p>TMAC S.r.l.s. – Via Legnano 27, 10128 Torino (TO), Italy – VAT IT13174990013 – e-mail: <span class="em">dash.privacy [at] tmac.it</span>.<br>
 For the information in your work Microsoft 365 account, your organisation remains the controller: DASH only reads it
 on your behalf, with the permissions you (or your administrator) grant.</p>
 
@@ -164,7 +164,7 @@ is deleted when you uninstall the app (on Windows and Mac also by deleting the D
 <h2>Your rights</h2>
 <p>You have the right to access, rectify, erase, restrict, object to and port your data, and to lodge a complaint with
 the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) or your local
-authority. For any request write to <a href="mailto:rtoniolo@tmac.it">rtoniolo@tmac.it</a>. You can also revoke the
+authority. For any request write to <span class="em">dash.privacy [at] tmac.it</span>. You can also revoke the
 permissions granted to DASH at any time at <a href="https://myapps.microsoft.com">myapps.microsoft.com</a> or through your
 Microsoft 365 administrator.</p>
 
@@ -172,5 +172,8 @@ Microsoft 365 administrator.</p>
 <p>If this policy changes, the new version is published on this page with its update date.</p>
 </article>
 </main>
+<script>/* indirizzo composto nella pagina: i programmi che raccolgono e-mail non lo trovano */
+document.querySelectorAll(".em").forEach(function (e) { var a = document.createElement("a"), x = ["dash.privacy", "tmac.it"].join(String.fromCharCode(64)); a.href = "mai" + "lto:" + x; a.textContent = x; e.replaceWith(a); });
+</script>
 </body>
 </html>
