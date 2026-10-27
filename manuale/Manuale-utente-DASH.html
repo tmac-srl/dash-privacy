@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>DASH · Manuale utente</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  :root { --blu: #00497A; --rosso: #B8202E; --ink: #161A1F; --ink2: #3B434C; --muted: #5B6470; --line: #E2E6EA; --fondo: #F4F6F8; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.5; margin: 0; }
+  h1 { font-size: 26pt; color: var(--blu); margin: 0; letter-spacing: .04em; }
+  h2 { font-size: 15pt; color: var(--blu); margin: 22pt 0 6pt; padding-bottom: 3pt; border-bottom: 1.5pt solid var(--blu); break-after: avoid; }
+  h3 { font-size: 11.5pt; color: var(--ink); margin: 12pt 0 4pt; break-after: avoid; }
+  p { margin: 4pt 0 6pt; }
+  ul, ol { margin: 4pt 0 8pt; padding-left: 18pt; }
+  li { margin: 2pt 0; }
+  b.k { color: var(--blu); }
+  code, .tasto { font-family: Consolas, monospace; font-size: 9.5pt; background: var(--fondo); border: 0.6pt solid var(--line); border-radius: 3pt; padding: 0 3pt; }
+  .copertina { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 245mm; break-after: page; }
+  .copertina img { width: 64mm; height: 64mm; }
+  .copertina .acr { font-size: 13pt; color: var(--ink2); margin-top: 6pt; }
+  .copertina .acr b { color: var(--blu); }
+  .copertina .sotto { margin-top: 18pt; color: var(--muted); font-size: 10pt; }
+  .copertina .tmac { margin-top: 30pt; display: flex; align-items: center; gap: 6pt; color: var(--muted); font-size: 10pt; }
+  .copertina .tmac img { width: 9mm; height: 9mm; }
+  .indice { break-after: page; }
+  .indice ol { columns: 1; font-size: 11pt; }
+  .nota { background: #EAF2F8; border-left: 3pt solid var(--blu); padding: 6pt 9pt; margin: 8pt 0; break-inside: avoid; }
+  .attenzione { background: #FBEFF0; border-left: 3pt solid var(--rosso); padding: 6pt 9pt; margin: 8pt 0; break-inside: avoid; }
+  .fig { display: flex; gap: 12pt; align-items: flex-start; margin: 8pt 0; break-inside: avoid; }
+  .fig img { width: 54mm; border: 0.6pt solid var(--line); border-radius: 4pt; flex-shrink: 0; }
+  .fig .testo { flex: 1; }
+  .fig.largo { flex-direction: column; }
+  .fig.largo img { width: 100%; }
+  table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-size: 9.8pt; break-inside: avoid; }
+  th, td { border: 0.6pt solid var(--line); padding: 4pt 6pt; text-align: left; vertical-align: top; }
+  th { background: var(--fondo); }
+  .piede { color: var(--muted); font-size: 8.5pt; margin-top: 18pt; border-top: 0.6pt solid var(--line); padding-top: 4pt; }
+  .salto { break-before: page; }
+</style>
+</head>
+<body>
+
+<section class="copertina">
+  <img src="../assets/icona-dash.svg" alt="">
+  <h1 style="margin-top:14pt">DASH</h1>
+  <div class="acr"><b>D</b>eadlines, <b>A</b>pprovals and <b>S</b>ignals <b>H</b>ub</div>
+  <div class="sotto">Manuale utente · versione 1.6.3<br>Installazione, primo accesso e uso quotidiano</div>
+  <div class="tmac"><img src="../assets/mark-128.png" alt=""> by TMAC</div>
+</section>
+
+<section class="indice">
+  <h2>Indice</h2>
+  <ol>
+    <li>Che cos'è DASH</li>
+    <li>Cosa serve</li>
+    <li>Installazione</li>
+    <li>Primo avvio e accesso</li>
+    <li>La finestra di DASH</li>
+    <li>Il Radar</li>
+    <li>Regole del Radar</li>
+    <li>Microsoft Teams</li>
+    <li>Intelligenza artificiale</li>
+    <li>Impostazioni</li>
+    <li>DASH sull'iPhone</li>
+    <li>DASH sul Mac</li>
+    <li>DASH su Android</li>
+    <li>Riservatezza dei dati</li>
+    <li>Problemi frequenti</li>
+    <li>Aggiornare e disinstallare</li>
+    <li>Appendice per l'amministratore Microsoft 365</li>
+  </ol>
+</section>
+
+<h2>1. Che cos'è DASH</h2>
+<p>DASH è un piccolo pannello che sta sul desktop di Windows e ti aiuta a non perdere nulla del lavoro di ogni giorno. Legge la tua <b>posta</b>, il tuo <b>calendario</b>, i tuoi <b>To Do</b> e, se vuoi, le tue <b>chat di Teams</b> e ti mostra in un colpo d'occhio:</p>
+<ul>
+  <li><b class="k">In ritardo</b>: impegni scaduti, richieste a cui non hai risposto entro la data chiesta, riunioni con esterni senza un seguito;</li>
+  <li><b class="k">Approvazioni ferme</b>: approvazioni chieste a te o da te che aspettano da troppi giorni;</li>
+  <li><b class="k">Mi aspettano</b>: persone che aspettano una tua risposta;</li>
+  <li><b class="k">Sto aspettando</b>: tue richieste che non hanno ancora avuto riscontro.</li>
+</ul>
+<p>Non devi inserire nulla: DASH lavora sui dati che hai già in Microsoft 365. Non sostituisce Outlook, Teams o gli strumenti di progetto: li affianca.</p>
+
+<h2>2. Cosa serve</h2>
+<ul>
+  <li>Un PC con <b>Windows 10 o 11</b> oppure un <b>Mac con processore Apple</b> (M1 o successivi; capitolo 12) e, se vuoi, un <b>iPhone</b> o un telefono <b>Android</b> (capitolo 13).</li>
+  <li>Un account <b>Microsoft 365</b> della tua organizzazione (posta e calendario di Outlook).</li>
+  <li>Il file di installazione <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Il <b>Client ID</b> e il <b>Tenant</b> di DASH per la tua organizzazione: te li comunica l'amministratore Microsoft 365 (vedi Appendice).</li>
+  <li>Facoltativo, per l'intelligenza artificiale: la licenza <b>Microsoft 365 Copilot</b> oppure una chiave delle <b>API di Anthropic</b> (vedi capitolo 9).</li>
+</ul>
+
+<h2>3. Installazione</h2>
+<ol>
+  <li>Fai doppio clic su <code>DASH-Setup-1.6.3.exe</code>.</li>
+  <li>Se Windows mostra «<b>Windows ha protetto il PC</b>» (SmartScreen), clicca <b>Ulteriori informazioni</b> e poi <b>Esegui comunque</b>. L'avviso compare perché il programma non è ancora firmato digitalmente: procedi solo se hai ricevuto il file da una fonte di cui ti fidi.</li>
+  <li>Scegli se installare solo per te (consigliato) e la cartella, poi <b>Installa</b>. Non servono diritti di amministratore.</li>
+  <li>Al termine DASH si avvia da solo. Trovi l'icona sul desktop e nel menu Start.</li>
+</ol>
+<div class="nota">DASH si avvia da solo all'accensione del PC. Puoi cambiarlo in Impostazioni › «Avvia DASH con Windows».</div>
+
+<h2>4. Primo avvio e accesso</h2>
+<ol>
+  <li>Al primo avvio DASH apre le <b>Impostazioni</b>. Inserisci l'<b>Application (client) ID</b> e il <b>Tenant</b> che ti ha comunicato l'amministratore Microsoft 365 della tua organizzazione (il Tenant può essere il dominio, es. <code>azienda.it</code>, o l'ID directory). Clicca <b>Salva</b>.</li>
+  <li>DASH mostra <b>Collega Microsoft 365</b>. Clicca <b>Accedi</b>.</li>
+  <li>Si apre il browser con la pagina di accesso Microsoft: entra con il tuo account di lavoro.</li>
+  <li>Se Microsoft chiede di <b>accettare le autorizzazioni</b> di «DASH» (leggere posta, calendario e attività), accetta. Se compare «È necessaria l'approvazione dell'amministratore», contatta chi gestisce Microsoft 365 nella tua organizzazione (vedi Appendice).</li>
+  <li>Torna su DASH: dopo pochi secondi compaiono saluto, agenda e Radar.</li>
+</ol>
+<div class="nota">DASH usa il Microsoft 365 della <b>tua</b> organizzazione: i tuoi dati restano tra il tuo PC e il vostro tenant. Client ID e Tenant si cambiano in qualunque momento in Impostazioni (capitolo 10).</div>
+
+<h2 class="salto">5. La finestra di DASH</h2>
+<div class="fig">
+  <img src="img/01-finestra.png" alt="La finestra di DASH">
+  <div class="testo">
+    <p><b>In alto</b>: l'icona, il nome DASH con la versione e, se impostato, il logo della tua azienda. A destra tre pulsanti:</p>
+    <ul>
+      <li><b>↻</b> aggiorna subito (DASH aggiorna comunque da solo ogni 5 minuti);</li>
+      <li><b>⚙</b> apre le Impostazioni;</li>
+      <li><b>–</b> rimette DASH sul desktop, sotto le altre finestre.</li>
+    </ul>
+    <p>Sotto: saluto, prossimo impegno, orologio e meteo.</p>
+    <p>Poi il <b>Radar</b> (capitolo 6) e, più in basso, <b>Agenda</b> (impegni di oggi e dei prossimi giorni, con «Partecipa» per le riunioni Teams), <b>Calendario</b> (settimana o mese) e <b>To Do</b> (spunta per completare, «▸ nota» per leggere la nota dell'attività, campo per aggiungerne una).</p>
+    <p>Ogni sezione si apre e chiude cliccando sul titolo; DASH ricorda le tue scelte.</p>
+  </div>
+</div>
+<h3>Mostrare e nascondere DASH</h3>
+<p>DASH si comporta come un widget: sta <b>sul desktop</b> e, quando clicchi su un'altra finestra, scende sotto le altre app. Non si è chiuso: per richiamarlo in primo piano usa la combinazione <span class="tasto">Ctrl + Alt + D</span>, oppure un clic sull'icona di DASH nell'area di notifica (accanto all'orologio di Windows), oppure mostra il desktop (<span class="tasto">Win + D</span>).</p>
+<p>Il tasto destro sull'icona nell'area di notifica apre un menu con <b>Aggiorna ora</b>, <b>Impostazioni</b>, <b>Avvia con Windows</b>, <b>Ripristina posizione</b>, <b>Esci dall'account</b> e <b>Chiudi DASH</b>.</p>
+
+<h2 class="salto">6. Il Radar</h2>
+<div class="fig">
+  <img src="img/02-radar.png" alt="Il Radar con due blocchi aperti">
+  <div class="testo">
+    <p>Il Radar ha quattro blocchi, chiusi all'avvio: il <b>numero</b> accanto al titolo dice quanti segnali ci sono (rosso per «In ritardo» e «Approvazioni ferme»). Clicca il titolo per aprirli.</p>
+    <p>Ogni segnale mostra chi, l'oggetto, da quanti <b>giorni lavorativi</b> aspetta (sabato, domenica e festività italiane non contano) e una riga di spiegazione. Il bordo rosso indica ciò che è urgente o scaduto.</p>
+    <p><b>Clic su un segnale</b> per aprirlo: compaiono l'oggetto per intero e il <b>testo</b> (le prime righe della mail o del messaggio Teams, oppure la nota dell'attività di To Do). Un altro clic lo richiude; per leggere tutto usa <b>Apri</b>.</p>
+    <p>Contrassegni: <b>Teams</b> (viola) se il segnale viene da una chat di Teams; <b>AI</b> se è stato letto dall'intelligenza artificiale.</p>
+  </div>
+</div>
+<h3>Le azioni su un segnale</h3>
+<p>Passa il mouse su un segnale per vedere le azioni:</p>
+<table>
+  <tr><th>Azione</th><th>Cosa fa</th></tr>
+  <tr><td><b>Rispondi</b> / <b>Apri</b></td><td>Apre la mail o la riunione nell'app Outlook (o la chat nell'app Teams). Se l'app non c'è, apre la versione web.</td></tr>
+  <tr><td><b>Leggi</b></td><td>Apre il segnale per intero in una finestra più grande: chi, oggetto, la sintesi e tutto il testo nuovo della mail o del messaggio. «Torna al Radar» la richiude.</td></tr>
+  <tr><td><b>Sposta in…</b></td><td>Mette il segnale in un altro gruppo della vista «Per interlocutore» (vedi sotto). La scelta vale anche per i segnali che arriveranno.</td></tr>
+  <tr><td><b>Sollecita</b></td><td>Prepara il testo di un sollecito cortese, che puoi modificare. «Copia e apri in Outlook» lo copia e apre la mail: incollalo nella risposta. Con l'AI attiva c'è anche «Riscrivi con l'AI».</td></tr>
+  <tr><td><b>Risolto</b></td><td>La cosa è fatta (anche a voce o al telefono): il segnale sparisce.</td></tr>
+  <tr><td><b>Ignora</b></td><td>Il segnale non è rilevante: sparisce.</td></tr>
+  <tr><td><b>Ignora simili</b></td><td>Crea una regola: d'ora in poi le mail con lo stesso mittente o destinatario e un oggetto simile non entrano nel Radar (es. la reportistica settimanale di un cliente).</td></tr>
+  <tr><td><b>Completata</b></td><td>Solo per le attività di To Do: la segna come completata.</td></tr>
+</table>
+<p>I segnali nascosti con Risolto o Ignora tornano visibili se nella stessa conversazione arriva qualcosa di nuovo. Puoi farli ricomparire tutti in Regole del Radar › «Rimostrali».</p>
+<h3>Riepilogo del mattino</h3>
+<p>Alle <b>8:30</b> dei giorni lavorativi DASH manda una notifica, che resta sullo schermo finché non la chiudi, e mette in cima al Radar il riquadro <b>«Il Radar di oggi»</b>: le cose in sospeso del mattino, divise per blocco («In ritardo» e «Approvazioni ferme» aperti, gli altri con un clic). Durante la giornata il riquadro si aggiorna: ciò che chiudi resta <b>barrato con ✓</b>, ciò che arriva dopo compare con l'etichetta <b>«nuova»</b> e in alto vedi quante cose hai fatto («3 di 9 fatte»). Un clic su una voce la apre; un clic sul titolo riduce il riquadro a una riga e lo riapre. Il riepilogo si spegne in Regole del Radar.</p>
+
+<h3>Il Radar per interlocutore</h3>
+<p>In cima al Radar scegli <b>«Per tipo»</b> (i quattro blocchi) o <b>«Per interlocutore»</b>. Nella seconda vista DASH raggruppa da solo i segnali: per <b>azienda</b> chi scrive da fuori (dal dominio della mail: boggi.it diventa «Boggi»), per <b>persona</b> i colleghi e chi usa caselle personali. Ogni gruppo dice cosa c'è in sospeso, per esempio «Boggi · 2 aspettano te · 1 in ritardo».</p>
+<p>Non serve configurare nulla. Se un gruppo è sbagliato, apri il segnale e usa <b>Sposta in…</b>: scrivi il nome del gruppo (anche nuovo, per esempio «Amministrazione») e scegli se vale solo per quella persona o per tutta la sua azienda. <b>Gruppo automatico</b> torna alla proposta di DASH. Le scelte si sincronizzano con gli altri dispositivi.</p>
+<h3>Pronto per la riunione</h3>
+<p>Nell'Agenda, accanto alle riunioni con altre persone, c'è <b>Prepara</b>. Apre una scheda da leggere in un minuto: le cose <b>in sospeso</b> con i partecipanti (anche con i loro colleghi della stessa azienda) e gli <b>ultimi scambi</b> delle due settimane, ognuno apribile con un clic. Con l'intelligenza artificiale attiva, in cima compaiono anche <b>3 righe di sintesi</b>: all'AI vanno solo oggetti e dettagli, mai il testo delle mail.</p>
+<p><b>15 minuti prima</b> della riunione arriva una notifica: cliccala per aprire la scheda. Il promemoria si spegne in Regole del Radar.</p>
+
+<h2 class="salto">7. Regole del Radar</h2>
+<div class="fig">
+  <img src="img/03-regole.png" alt="Il pannello Regole del Radar">
+  <div class="testo">
+    <p>Si aprono con <b>Regole</b>, in alto a destra nel Radar.</p>
+    <ul>
+      <li><b>«Sto aspettando» dopo</b>: quanti giorni lavorativi senza risposta prima di segnalare una tua richiesta (3 di base).</li>
+      <li><b>Approvazioni ferme dopo</b>: lo stesso per le approvazioni (2).</li>
+      <li><b>Follow-up delle riunioni entro</b>: giorni dopo una riunione con persone esterne senza una tua mail ai partecipanti (2).</li>
+      <li><b>Riepilogo alle 8:30</b>: accende o spegne la notifica del mattino.</li>
+      <li><b>Promemoria 15 minuti prima delle riunioni</b>: accende o spegne la notifica di «Pronto per la riunione».</li>
+      <li><b>Leggi anche Microsoft Teams</b>: vedi capitolo 8.</li>
+      <li><b>Categorie di Outlook da ignorare</b>: le mail con queste categorie non entrano nel Radar (di base «DASH: ignora»).</li>
+    </ul>
+  </div>
+</div>
+<h3>Mail da non considerare</h3>
+<p>Ogni regola ha due campi; se li compili entrambi devono valere tutti e due:</p>
+<ul>
+  <li><b>Da/a</b>: un indirizzo preciso (<code>nome@cliente.it</code>) o un dominio (<code>cliente.it</code>, vale anche per i sottodomini);</li>
+  <li><b>Oggetto</b>: una o più parole separate da virgola; ne basta una.</li>
+</ul>
+<p>Esempio: Da/a <code>cliente.it</code> e Oggetto <code>report, estrazione settimanale</code> esclude la reportistica di quel cliente, ma non le sue altre mail.</p>
+<div class="nota">Anche una <b>regola di Outlook</b> funziona: DASH legge solo Posta in arrivo e Posta inviata, quindi le mail spostate automaticamente in un'altra cartella (es. «Reportistica») sono già fuori dal Radar.</div>
+<p>In fondo al pannello, <b>Escluse nell'ultimo aggiornamento</b> (clicca per aprire) elenca le mail scartate e il motivo: utile per controllare che le regole facciano ciò che vuoi. Ricordati di cliccare <b>Salva</b>.</p>
+
+<h2>8. Microsoft Teams</h2>
+<p>Con <b>Leggi anche Microsoft Teams</b> acceso (Regole del Radar), DASH considera anche:</p>
+<ul>
+  <li>le <b>chat 1:1</b>: se l'ultimo messaggio è dell'altra persona e ti chiede qualcosa → «Mi aspettano»; se è tuo con una domanda senza risposta da alcuni giorni → «Sto aspettando»;</li>
+  <li>le <b>chat di gruppo e delle riunioni</b>: solo i messaggi che ti menzionano (@) o iniziano con il tuo nome;</li>
+  <li>i <b>canali</b> dei team: i messaggi in cui sei menzionato, finché non hai scritto nel filo.</li>
+</ul>
+<p>La prima volta DASH può chiederti di accedere di nuovo: Microsoft deve confermare i permessi di Teams. Se Teams non è leggibile, sotto il titolo del Radar compare una riga rossa «Teams non leggibile» con il motivo.</p>
+
+<h2 class="salto">9. Intelligenza artificiale</h2>
+<div class="fig">
+  <img src="img/05-ai.png" alt="Il pannello Intelligenza artificiale">
+  <div class="testo">
+    <p>È <b>facoltativa</b>: senza AI il Radar funziona con le regole e non costa nulla. Con l'AI un modello legge il testo delle mail e dei messaggi candidati e riconosce richieste implicite, solleciti garbati e impegni presi a parole; scrive anche i solleciti.</p>
+    <p>Si apre da Impostazioni › <b>Intelligenza artificiale…</b> Scegli il <b>Motore</b>:</p>
+    <ul>
+      <li><b>Solo regole</b>: nessun costo, nessun dato inviato;</li>
+      <li><b>Microsoft 365 Copilot</b>: nessun costo in più se hai la licenza Microsoft 365 Copilot; i dati restano in Microsoft 365. Dopo il salvataggio DASH può chiederti di accedere di nuovo. Clicca <b>Prova Copilot</b> per verificare;</li>
+      <li><b>API di Anthropic (Claude)</b>: serve una chiave della Console di Anthropic, a consumo. Incolla la chiave, <b>Salva</b> e <b>Prova la chiave</b>. Fissa un tetto di spesa nella Console.</li>
+    </ul>
+  </div>
+</div>
+<p><b>Mail lette al giorno, al massimo</b> è un limite di sicurezza (150 di base); ogni mail si legge una volta sola. Il riquadro sotto mostra quante mail sono state lette oggi e, per Anthropic, il costo stimato del mese.</p>
+
+<h2>10. Impostazioni</h2>
+<div class="fig">
+  <img src="img/04-impostazioni.png" alt="Il pannello Impostazioni">
+  <div class="testo">
+    <ul>
+      <li><b>Lingua</b> di DASH: <b>Automatica</b> (quella di Windows, del Mac o del telefono), oppure Italiano, English, Deutsch, Français. Cambia subito pulsanti, testi dei segnali e date; anche <b>Manuale utente</b> apre questo documento nella lingua scelta. I testi scritti dall'AI, i solleciti e le notifiche restano in italiano.</li>
+      <li><b>Application (client) ID</b> e <b>Tenant</b>: quelli della tua organizzazione, inseriti al primo avvio; cambiali solo se te lo chiede l'amministratore.</li>
+      <li><b>Combinazione di tasti</b> per richiamare DASH (di base <span class="tasto">Control+Alt+D</span>).</li>
+      <li><b>Località per il meteo</b>: «Automatica» o una città.</li>
+      <li><b>Avvia DASH con Windows</b>.</li>
+      <li><b>Apri mail e riunioni nell'app Outlook</b>: se spento, si apre sempre la versione web.</li>
+      <li><b>Sincronizza con gli altri dispositivi (PC e telefono)</b>: vedi sotto.</li>
+      <li><b>Logo dell'azienda in testata</b>: «Scegli logo…» (PNG, JPG o SVG fino a 1 MB), «Togli logo».</li>
+      <li>In fondo: <b>Regole del Radar…</b>, <b>Intelligenza artificiale…</b>, <b>Manuale utente</b> (apre questo documento), <b>Esci dall'account</b>.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Sincronizzare PC e telefono</h3>
+<p>Se usi DASH su più dispositivi (per esempio il PC e l'iPhone), accendi <b>Sincronizza con gli altri dispositivi</b> su <b>ciascuno</b> di essi. Da quel momento condividono:</p>
+<ul>
+  <li>le <b>Regole del Radar</b> (giorni, categorie escluse, regole, «Ignora simili», Teams, riepilogo) e la scelta dell'<b>intelligenza artificiale</b>;</li>
+  <li>i segnali segnati <b>Risolto</b> o <b>Ignora</b>, e «Ripristina»;</li>
+  <li>le <b>mail da non considerare</b>;</li>
+  <li>le <b>analisi dell'AI</b>: una mail letta da Copilot su un dispositivo non si rilegge sull'altro.</li>
+</ul>
+<p>Restano su ciascun dispositivo: Client ID e Tenant, la lingua, la chiave di Anthropic, la combinazione di tasti, l'avvio con Windows, il logo e i costi dell'AI. La sincronizzazione avviene a ogni aggiornamento e pochi secondi dopo ogni tua azione; sotto la casella compare l'ora dell'ultima sincronizzazione. Se due dispositivi cambiano le Regole quasi insieme, vale l'ultima modifica.</p>
+<p>I dati stanno in un file in una cartella riservata a DASH nel <b>tuo OneDrive</b> (<b>App › DASH</b>): non spostarla né modificarla. La prima volta DASH può chiederti di accedere di nuovo, perché Microsoft deve confermare il permesso per quella cartella.</p>
+
+<h2 class="salto">11. DASH sull'iPhone</h2>
+<div class="fig">
+  <img src="img/06-iphone.jpg" alt="DASH sull'iPhone">
+  <div class="testo">
+    <p>Sull'iPhone DASH ha la <b>stessa interfaccia</b> e lo <b>stesso Radar</b> del PC: stessi segnali, stesse azioni, stesse regole e la stessa intelligenza artificiale. Al primo avvio si inseriscono gli stessi <b>Application (client) ID</b> e <b>Tenant</b> del PC, poi <b>Accedi</b>.</p>
+    <p>Cosa cambia rispetto al PC:</p>
+    <ul>
+      <li><b>Testata compatta</b>: ora, data e temperatura stanno in una riga. <b>Tocca la riga</b> per aprire o chiudere le previsioni dei prossimi giorni; DASH ricorda la scelta.</li>
+      <li><b>Azioni sempre visibili</b> sotto ogni segnale (Apri, Risolto, Ignora, Ignora simili), perché sul telefono non c'è il passaggio del mouse.</li>
+      <li><b>Aggiornamento</b>: ogni 5 minuti <b>mentre l'app è aperta</b>, e subito quando ci torni. Con l'app chiusa iOS non lascia leggere la posta: aprendola dopo molte ore, l'AI impiega un paio di minuti a leggere le mail nuove.</li>
+      <li><b>Riepilogo del mattino</b>: arriva come <b>notifica</b> alle 8:30 dei giorni lavorativi, con i dati dell'ultima volta che hai aperto DASH. Aprendo l'app dopo le 8:30 trovi anche il riquadro <b>«Il Radar di oggi»</b> in cima al Radar, come sul PC. Consenti le notifiche al primo avvio.</li>
+      <li><b>Apri</b> porta all'app <b>Outlook</b> o <b>Teams</b> dell'iPhone, se installate, altrimenti a Safari.</li>
+      <li><b>Schermo grande</b>: sull'<b>iPhone Duo aperto</b>, sull'iPad o con il telefono in orizzontale DASH si divide in <b>due colonne</b>, a sinistra il Radar e a destra Agenda, Calendario e To Do. Da chiuso o in verticale torna da solo a una colonna.</li>
+      <li>Non ci sono la combinazione di tasti, l'avvio con Windows, la scelta dell'Outlook classico e il logo dell'azienda.</li>
+    </ul>
+    <p>Per avere sul telefono le stesse regole, gli stessi segnali nascosti e le analisi dell'AI del PC, accendi <b>Sincronizza con gli altri dispositivi</b> su entrambi (capitolo 10).</p>
+  </div>
+</div>
+
+<h3>Installazione con TestFlight</h3>
+<p>Per ora DASH per iPhone e iPad non è sull'App Store: si installa con <b>TestFlight</b>, l'app di Apple per le versioni in prova.</p>
+<ol>
+  <li>Dall'App Store installa l'app gratuita <b>TestFlight</b>.</li>
+  <li>Apri l'invito che ricevi per mail («DASH by TMAC») e tocca <b>Visualizza in TestFlight</b>, oppure apri il link che ti è stato dato.</li>
+  <li>In TestFlight tocca <b>Installa</b>. ✅ Sulla schermata Home compare DASH.</li>
+  <li>Al primo avvio inserisci <b>Client ID</b> e <b>Tenant</b>, poi <b>Accedi</b> (capitolo 4).</li>
+</ol>
+<div class="nota">Le versioni nuove arrivano da TestFlight, che avvisa con una notifica; si aggiornano con <b>Aggiorna</b>. Ogni versione resta valida 90 giorni: prima della scadenza ne arriva sempre una nuova. Impostazioni e regole restano.</div>
+
+<h2 class="salto">12. DASH sul Mac</h2>
+<div class="fig largo">
+  <img src="img/07-mac.jpg" alt="DASH sul Mac, sotto la sua icona nella barra dei menu">
+</div>
+<p>Sul Mac DASH è <b>lo stesso programma del PC</b>: stesso pannello, stesso Radar, stesse regole, stessa intelligenza artificiale e stessa sincronizzazione. Serve un <b>Mac con processore Apple</b> (M1 o successivi): sui Mac con processore Intel questa versione non si apre.</p>
+
+<h3>Installazione e primo avvio</h3>
+<ol>
+  <li>Fai doppio clic sul file <code>DASH-1.6.3-mac.dmg</code>.</li>
+  <li>Nella finestra che compare, <b>trascina l'icona di DASH</b> sulla cartella <b>Applicazioni</b>. Poi chiudi la finestra ed espelli il disco «DASH» (tasto destro › Espelli).</li>
+  <li>Apri <b>Applicazioni</b> e fai doppio clic su <b>DASH</b>.</li>
+  <li>Se macOS dice che <b>non può aprirlo</b> perché lo sviluppatore non è verificato: vai in <b>Impostazioni di Sistema › Privacy e sicurezza</b>, scorri in basso fino a «DASH è stato bloccato…», premi <b>Apri comunque</b> e conferma con la password del Mac. Succede solo la prima volta.</li>
+  <li>In alto a destra, nella <b>barra dei menu</b>, compare la <b>D di DASH</b> e si apre il pannello. Se chiede di inviare notifiche, scegli <b>Consenti</b>: servono per il riepilogo delle 8:30.</li>
+  <li>Inserisci <b>Application (client) ID</b> e <b>Tenant</b>, gli stessi del PC, poi <b>Salva</b> e <b>Accedi</b> (capitolo 4).</li>
+  <li>Se compare «DASH vuole usare le informazioni del portachiavi», scrivi la password del Mac e scegli <b>Consenti sempre</b>: lì DASH tiene la sessione, cifrata.</li>
+</ol>
+<div class="nota">Per avere sul Mac le stesse regole, gli stessi segnali nascosti e le analisi dell'AI del PC e dell'iPhone, accendi <b>Sincronizza con gli altri dispositivi</b> (capitolo 10).</div>
+
+<h3>Cosa cambia rispetto al PC</h3>
+<ul>
+  <li>L'icona di DASH sta nella <b>barra dei menu</b> in alto a destra, non nel Dock. Un clic sull'icona mostra o nasconde il pannello; con il tasto destro (o due dita) si apre il menu, con <b>Chiudi DASH</b>.</li>
+  <li>La combinazione di tasti per richiamarlo è <span class="tasto">⌃ ⌥ D</span> (Control + Option + D). Si cambia in Impostazioni, per esempio con <code>Command+Shift+D</code>.</li>
+  <li><b>Rimetti sul desktop</b> nasconde DASH, che torna con i tasti o con un clic sull'icona nella barra dei menu.</li>
+  <li><b>Apri</b> porta a <b>Outlook sul web</b>: l'Outlook classico di Windows sul Mac non c'è.</li>
+  <li>Al posto di «Avvia con Windows» c'è <b>Apri DASH all'accesso al Mac</b>, in Impostazioni.</li>
+  <li>Il riepilogo del mattino arriva come <b>notifica del Mac</b>.</li>
+</ul>
+
+<h2 class="salto">13. DASH su Android</h2>
+<p>Sui telefoni Android DASH è <b>la stessa app dell'iPhone</b>: stessa interfaccia, stesso Radar, stesse azioni, stesse regole, stessa intelligenza artificiale e stessa sincronizzazione. Vale quindi tutto il capitolo 11, comprese le <b>due colonne</b> con il telefono in orizzontale o sui pieghevoli aperti. Serve Android 7 o successivo.</p>
+
+<h3>Installazione</h3>
+<p>Per ora DASH per Android non è sul Play Store: si installa dal file <code>DASH-1.6.3-android.apk</code>, che ricevi per mail, OneDrive o Teams.</p>
+<ol>
+  <li>Apri il file <b>dal telefono</b> (tocca l'allegato o il file in OneDrive).</li>
+  <li>Android chiede di consentire l'installazione da quell'app (per esempio Outlook o il browser): tocca <b>Impostazioni</b>, accendi <b>Consenti da questa fonte</b> e torna indietro.</li>
+  <li>Tocca <b>Installa</b>. Se Google Play Protect avvisa che l'app è sconosciuta, tocca <b>Altri dettagli › Installa comunque</b>.</li>
+  <li>Apri <b>DASH</b>. Inserisci <b>Application (client) ID</b> e <b>Tenant</b>, gli stessi del PC, poi <b>Salva</b> e <b>Accedi</b>.</li>
+  <li>Se chiede di inviare notifiche, tocca <b>Consenti</b>: servono per il riepilogo delle 8:30.</li>
+</ol>
+<div class="nota">Per aggiornare DASH installa il nuovo file <code>.apk</code> sopra quello vecchio: impostazioni, regole e accesso restano.</div>
+
+<h3>Cosa cambia rispetto all'iPhone</h3>
+<ul>
+  <li><b>Apri</b> porta all'app <b>Outlook</b> o <b>Teams</b> di Android, se installate, altrimenti al browser.</li>
+  <li>La sessione e la chiave di Anthropic sono cifrate nell'<b>archivio protetto di Android</b> invece che nel portachiavi di iOS.</li>
+  <li>Il <b>Client ID</b> e il <b>Tenant</b> sono gli stessi; in Entra ID l'amministratore aggiunge la piattaforma Android (Appendice).</li>
+</ul>
+
+<h2 class="salto">14. Riservatezza dei dati</h2>
+<ul>
+  <li>DASH funziona <b>sul tuo PC</b> o <b>sul tuo Mac</b> e <b>sul tuo telefono</b> (iPhone o Android): non c'è un server di TMAC in mezzo. Legge solo la <b>tua</b> casella, con i <b>tuoi</b> permessi. Nessun altro, nemmeno TMAC, vede i tuoi segnali.</li>
+  <li><b>TMAC non riceve e non vede i tuoi dati.</b> L'intelligenza artificiale che DASH usa è quella della <b>tua organizzazione</b>: la sua licenza Microsoft 365 Copilot o la sua chiave di Anthropic, con i suoi contratti. TMAC fornisce solo il programma.</li>
+  <li>Con la <b>sincronizzazione</b> accesa, impostazioni, segnali nascosti e segnali estratti dall'AI si copiano anche nella cartella di DASH del <b>tuo OneDrive</b>: restano nel Microsoft 365 della tua organizzazione, mai presso TMAC.</li>
+  <li>Sul PC DASH conserva le impostazioni, i segnali nascosti e, con l'AI, i <b>soli segnali estratti</b> (non i testi delle mail). La sessione Microsoft e la chiave di Anthropic sono cifrate con la protezione di Windows.</li>
+  <li>Con l'AI attiva, al modello vanno solo data, oggetto, nomi, dominio e testo nuovo delle mail e dei messaggi che il Radar valuta: <b>mai</b> indirizzi completi, allegati, mail escluse dalle regole o automatiche.</li>
+  <li><b>Copilot</b>: i dati restano nel perimetro di Microsoft 365 della tua organizzazione, secondo i suoi impegni contrattuali (tra cui il non addestramento dei modelli sui dati dei clienti).</li>
+  <li><b>API di Anthropic</b>: con il contratto commerciale i dati, per impostazione, non sono usati per addestrare i modelli; l'elaborazione avviene fuori dall'UE. Usala solo se la tua organizzazione l'ha approvata.</li>
+</ul>
+<div class="attenzione">Le garanzie legali (accordo sul trattamento dei dati, trasferimenti fuori UE, informativa) dipendono dai contratti con Microsoft e Anthropic e dalle verifiche del referente privacy della tua organizzazione: questo manuale descrive come funziona DASH, non sostituisce quelle verifiche.</div>
+
+<h2>15. Problemi frequenti</h2>
+<table>
+  <tr><th>Cosa vedi</th><th>Cosa fare</th></tr>
+  <tr><td>DASH «è sparito» o sembra chiuso</td><td>È sotto le altre finestre: <span class="tasto">Ctrl + Alt + D</span> o clic sull'icona nell'area di notifica. Se l'icona non c'è, avvialo dal menu Start.</td></tr>
+  <tr><td>«Sessione scaduta: accedi di nuovo»</td><td>Clicca <b>Accedi</b> e rientra con il tuo account. Succede dopo un cambio di password o di permessi.</td></tr>
+  <tr><td>«La combinazione … è già usata da un altro programma»</td><td>Scegli un'altra combinazione in Impostazioni (es. <code>Control+Alt+Shift+D</code>).</td></tr>
+  <tr><td>«È necessaria l'approvazione dell'amministratore» all'accesso</td><td>L'amministratore Microsoft 365 deve concedere il consenso all'app DASH (Appendice).</td></tr>
+  <tr><td>«Teams non leggibile» nel Radar</td><td>Mancano i permessi di Teams: avvisa l'amministratore. Puoi spegnere Teams nelle Regole.</td></tr>
+  <tr><td>«AI: errore» in alto nel Radar</td><td>Passa il mouse per leggere il motivo. Copilot: serve la licenza Microsoft 365 Copilot e i permessi; Anthropic: chiave non valida o credito esaurito.</td></tr>
+  <tr><td>Sotto «Sincronizza…»: «OneDrive non consente l'accesso»</td><td>Manca il permesso <code>Files.ReadWrite.AppFolder</code>: avvisa l'amministratore (Appendice), poi esci e accedi di nuovo.</td></tr>
+  <tr><td>Un segnale sbagliato che torna sempre</td><td>Usa <b>Ignora simili</b>, oppure una regola o una categoria di Outlook.</td></tr>
+  <tr><td>Manca un segnale che ti aspettavi</td><td>Controlla «Escluse nell'ultimo aggiornamento» nelle Regole; ricorda che DASH guarda le ultime due settimane e solo Posta in arrivo e Posta inviata.</td></tr>
+</table>
+
+<h2>16. Aggiornare e disinstallare</h2>
+<ul>
+  <li><b>Aggiornare</b>: chiudi DASH (tasto destro sull'icona › Chiudi DASH) e installa la nuova versione sopra la precedente. Impostazioni, regole e accesso restano.</li>
+  <li><b>Disinstallare</b>: Impostazioni di Windows › App › App installate › DASH › Disinstalla. Le impostazioni restano nella cartella <code>%APPDATA%\DASH</code>: cancellala se vuoi eliminare tutto.</li>
+</ul>
+
+<h2 class="salto">17. Appendice per l'amministratore Microsoft 365</h2>
+<p>DASH usa una <b>registrazione app in Entra ID</b> con <b>permessi delegati</b>: ogni persona vede solo la propria casella, e i dati passano solo tra il PC e il Microsoft 365 della vostra organizzazione (TMAC non riceve nulla). Ogni organizzazione usa il <b>proprio tenant</b> e, per l'intelligenza artificiale, la <b>propria</b> licenza Copilot o chiave di Anthropic.</p>
+<p>Una sola volta per tutta l'organizzazione, l'amministratore registra DASH nel vostro tenant come segue e comunica agli utenti <b>Client ID</b> e <b>Tenant</b> (o il nome di dominio), da inserire al primo avvio.</p>
+<h3>Registrazione app (5 minuti)</h3>
+<ol>
+  <li><code>https://entra.microsoft.com</code> › Identità › Applicazioni › <b>Registrazioni app</b> › <b>Nuova registrazione</b>.</li>
+  <li>Nome: <b>DASH</b>. Tipo di account: <b>Solo gli account in questa directory organizzativa</b>.</li>
+  <li>URI di reindirizzamento: piattaforma <b>Client pubblico/nativo (dispositivi mobili e desktop)</b>, valore <code>http://localhost</code>. <b>Registra</b>.</li>
+  <li>In <b>Autenticazione</b>: «Consenti flussi client pubblici» = <b>Sì</b>. Nessun segreto client: non serve.</li>
+  <li>In <b>Panoramica</b> copiate l'<b>ID applicazione (client)</b> e l'<b>ID directory (tenant)</b>: sono i valori da inserire in DASH.</li>
+  <li>In <b>Autorizzazioni API</b> aggiungete i permessi della tabella seguente e cliccate <b>Concedi consenso amministratore</b>.</li>
+</ol>
+<h3>Permessi Microsoft Graph (delegati)</h3>
+<table>
+  <tr><th>Quando</th><th>Permessi</th></tr>
+  <tr><td>Sempre</td><td><code>User.Read</code>, <code>Mail.Read</code>, <code>Calendars.Read</code>, <code>Tasks.ReadWrite</code>, <code>offline_access</code></td></tr>
+  <tr><td>Con Teams acceso</td><td><code>Chat.Read</code>, <code>Team.ReadBasic.All</code>, <code>Channel.ReadBasic.All</code>, <code>ChannelMessage.Read.All</code></td></tr>
+  <tr><td>Con la sincronizzazione tra dispositivi</td><td><code>Files.ReadWrite.AppFolder</code> (solo la cartella di DASH nel OneDrive dell'utente, App › DASH)</td></tr>
+  <tr><td>Con il motore Copilot</td><td><code>Sites.Read.All</code>, <code>People.Read.All</code>, <code>OnlineMeetingTranscript.Read.All</code>, <code>Chat.Read</code>, <code>ChannelMessage.Read.All</code>, <code>ExternalItem.Read.All</code> (richiesti tutti dalla Chat API di Microsoft 365 Copilot)</td></tr>
+</table>
+<p>Dopo averli aggiunti: <b>Concedi consenso amministratore</b> per l'organizzazione. I permessi di Teams, di Copilot e della sincronizzazione vengono chiesti agli utenti solo se attivano quelle funzioni.</p>
+<p>Per l'<b>app iPhone</b>: in <b>Autenticazione</b> aggiungete anche la piattaforma <b>iOS / macOS</b> con Bundle ID <code>it.tmac.dash</code>.</p>
+<p>Per l'<b>app Android</b>: in <b>Autenticazione › Aggiungi una piattaforma › Android</b> indicate il nome del pacchetto <code>it.tmac.dash</code> e l'hash della firma <code>Tvy2xt5sIIb4Hyur+URCnvo+YmQ=</code> (il file <code>.apk</code> distribuito da TMAC è firmato con quella chiave).</p>
+
+<p class="piede">DASH · Deadlines, Approvals and Signals Hub · versione 1.6 · by TMAC — Where experience matters!</p>
+</body>
+</html>
