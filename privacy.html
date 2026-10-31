@@ -32,7 +32,7 @@
 
 <article id="it">
 <h1>DASH – Informativa sulla privacy</h1>
-<p class="data">Ultimo aggiornamento: 26 ottobre 2026</p>
+<p class="data">Ultimo aggiornamento: 31 ottobre 2026</p>
 
 <p>DASH (Deadlines, Approvals and Signals Hub) è un'app di TMAC S.r.l.s. che legge la posta, il calendario, le
 attività di Microsoft To Do e, se lo scegli, Microsoft Teams del <strong>tuo</strong> account Microsoft 365 e ti
@@ -55,21 +55,26 @@ solo per tuo conto e con i permessi che tu (o il tuo amministratore) concedi.</p
 <table>
   <tr><th>Dati</th><th>Perché</th><th>Dove restano</th></tr>
   <tr><td>Nome e indirizzo e-mail del tuo account Microsoft</td><td>Accesso e saluto nell'app</td><td>Sul tuo dispositivo</td></tr>
-  <tr><td>Mail (mittente, destinatari, oggetto, data, anteprima e testo)</td><td>Capire cosa è in ritardo o in attesa di risposta</td><td>Sul tuo dispositivo; DASH non le modifica né le invia</td></tr>
+  <tr><td>Mail (mittente, destinatari, oggetto, data, anteprima e testo)</td><td>Capire cosa è in ritardo o in attesa di risposta</td><td>Sul tuo dispositivo; DASH non le invia e non le cancella. Solo se accendi «Contrassegna le mail da DASH» mette o toglie il contrassegno della mail</td></tr>
   <tr><td>Calendario</td><td>Agenda e preparazione delle riunioni</td><td>Sul tuo dispositivo</td></tr>
-  <tr><td>Attività di Microsoft To Do</td><td>Mostrarle e segnarle come fatte</td><td>Nel tuo Microsoft 365</td></tr>
+  <tr><td>Attività di Microsoft To Do</td><td>Mostrarle, aggiungerne di nuove e segnarle come fatte</td><td>Nel tuo Microsoft 365</td></tr>
   <tr><td>Chat e canali di Teams (facoltativo)</td><td>Aggiungere al Radar i messaggi di Teams</td><td>Sul tuo dispositivo</td></tr>
-  <tr><td>Impostazioni e regole del Radar</td><td>Ritrovarle su tutti i tuoi dispositivi</td><td>In una cartella riservata all'app nel <strong>tuo</strong> OneDrive (App/DASH)</td></tr>
+  <tr><td>Impostazioni e regole del Radar, segnali risolti o ignorati, mail ignorate, riunioni seguite (con oggetto e indirizzi dei partecipanti esterni), esiti dell'AI (con brevi sintesi del contenuto, mai il testo delle mail)</td><td>Ritrovarli su tutti i tuoi dispositivi</td><td>Sul tuo dispositivo e, solo se accendi la sincronizzazione, in una cartella riservata all'app nel <strong>tuo</strong> OneDrive (App/DASH)</td></tr>
   <tr><td>Città per il meteo</td><td>Mostrare le previsioni</td><td>Sul tuo dispositivo</td></tr>
 </table>
 <p>L'accesso a Microsoft avviene sulla pagina ufficiale di Microsoft: DASH non vede né conserva la tua password.
 I gettoni di accesso restano sul dispositivo e si cancellano quando esci dall'account.</p>
 
 <h2>Intelligenza artificiale (facoltativa)</h2>
-<p>Se attivi l'AI, per riassumere i segnali e preparare le riunioni DASH invia <strong>l'oggetto e un estratto di al
-massimo 2.000 caratteri</strong> delle mail o dei messaggi interessati al servizio che hai scelto:</p>
+<p>Se attivi l'AI, DASH invia al servizio che hai scelto:</p>
 <ul>
-  <li><strong>Microsoft 365 Copilot</strong>, dentro il tuo Microsoft 365, alle condizioni del tuo contratto Microsoft;</li>
+  <li>per leggere i segnali: <strong>l'oggetto e un estratto di al massimo 2.000 caratteri</strong> del testo nuovo delle mail o dei messaggi interessati, la data, i nomi delle persone e il dominio del loro indirizzo;</li>
+  <li>per preparare una riunione: titolo, partecipanti, segnali e oggetti, mai il testo delle mail;</li>
+  <li>per riscrivere un sollecito: anche il testo della mail a cui si riferisce.</li>
+</ul>
+<p>I servizi disponibili sono:</p>
+<ul>
+  <li><strong>Microsoft 365 Copilot</strong>, dentro il tuo Microsoft 365, alle condizioni del tuo contratto Microsoft. Questo servizio richiede permessi ampi, che concede la tua organizzazione: siti SharePoint, persone, trascrizioni delle riunioni, chat, canali e contenuti esterni. DASH chiede a Copilot di limitarsi al testo inviato, ma è una richiesta e non un limite tecnico: una sintesi potrebbe riportare informazioni di altri documenti a cui hai accesso;</li>
   <li><strong>Anthropic (Claude)</strong>, con la chiave API che inserisci tu, alle condizioni commerciali di Anthropic,
     che non usa i dati ricevuti tramite API per addestrare i propri modelli.</li>
 </ul>
@@ -87,9 +92,13 @@ garanzie previste dal GDPR (decisione di adeguatezza o clausole contrattuali tip
 
 <h2>Base giuridica e conservazione</h2>
 <p>I dati sono trattati per fornirti il servizio che hai chiesto installando e collegando l'app (art. 6.1.b GDPR) e,
-per l'AI e il meteo automatico, sulla base della tua scelta di attivarli. Restano sul dispositivo finché usi DASH:
-si cancellano disinstallando l'app (su Windows e Mac anche eliminando la cartella dei dati di DASH); uscendo dall'account si cancellano gli accessi. Il file nella cartella App/DASH del tuo OneDrive puoi
-eliminarlo quando vuoi.</p>
+per l'AI e il meteo automatico, sulla base della tua scelta di attivarli. Restano sul dispositivo finché usi DASH; uscendo dall'account si cancellano gli accessi.</p>
+<p><strong>Disinstallare l'app non cancella sempre tutto:</strong></p>
+<ul>
+  <li><strong>Windows e Mac:</strong> i dati, compresi l'accesso cifrato e la chiave dell'AI, restano nella cartella di DASH finché non la elimini (<code>%APPDATA%\DASH</code> su Windows, <code>~/Library/Application Support/DASH</code> sul Mac). Prima esci dall'account, poi disinstalla ed elimina la cartella.</li>
+  <li><strong>iPhone, iPad e Android:</strong> prima di eliminare l'app esci dall'account e usa «Togli la chiave» se hai inserito una chiave dell'AI. Su iPhone e iPad accesso e chiave possono restare nel portachiavi anche dopo l'eliminazione dell'app.</li>
+  <li><strong>OneDrive:</strong> il file nella cartella App/DASH non viene cancellato da solo: puoi eliminarlo quando vuoi.</li>
+</ul>
 
 <h2>Minori</h2>
 <p>DASH è uno strumento di lavoro e non è rivolto ai minori di 16 anni.</p>
@@ -107,7 +116,7 @@ o chiedendo al tuo amministratore Microsoft 365.</p>
 
 <article id="en" lang="en">
 <h1>DASH – Privacy Policy</h1>
-<p class="data">Last updated: 26 October 2026</p>
+<p class="data">Last updated: 31 October 2026</p>
 
 <p>DASH (Deadlines, Approvals and Signals Hub) is an app by TMAC S.r.l.s. It reads the mail, calendar, Microsoft To Do
 tasks and, if you choose, Microsoft Teams of <strong>your</strong> Microsoft 365 account, and shows you what is overdue,
@@ -130,21 +139,26 @@ on your behalf, with the permissions you (or your administrator) grant.</p>
 <table>
   <tr><th>Data</th><th>Why</th><th>Where it stays</th></tr>
   <tr><td>Name and e-mail address of your Microsoft account</td><td>Sign-in and greeting</td><td>On your device</td></tr>
-  <tr><td>Mail (sender, recipients, subject, date, preview and text)</td><td>Finding what is overdue or awaiting a reply</td><td>On your device; DASH never changes or sends mail</td></tr>
+  <tr><td>Mail (sender, recipients, subject, date, preview and text)</td><td>Finding what is overdue or awaiting a reply</td><td>On your device; DASH never sends or deletes mail. Only if you turn on “Flag emails from DASH” does it set or clear the mail’s flag</td></tr>
   <tr><td>Calendar</td><td>Agenda and meeting preparation</td><td>On your device</td></tr>
-  <tr><td>Microsoft To Do tasks</td><td>Showing them and marking them done</td><td>In your Microsoft 365</td></tr>
+  <tr><td>Microsoft To Do tasks</td><td>Showing them, adding new ones and marking them done</td><td>In your Microsoft 365</td></tr>
   <tr><td>Teams chats and channels (optional)</td><td>Adding Teams messages to the Radar</td><td>On your device</td></tr>
-  <tr><td>Settings and Radar rules</td><td>Keeping them in sync across your devices</td><td>In an app-only folder of <strong>your</strong> OneDrive (Apps/DASH)</td></tr>
+  <tr><td>Settings and Radar rules, resolved or ignored signals, ignored mail, followed meetings (with subject and addresses of external participants), AI results (with short summaries of the content, never the text of the mail)</td><td>Keeping them in sync across your devices</td><td>On your device and, only if you turn on sync, in an app-only folder of <strong>your</strong> OneDrive (Apps/DASH)</td></tr>
   <tr><td>City for the weather</td><td>Showing the forecast</td><td>On your device</td></tr>
 </table>
 <p>You sign in on Microsoft's official page: DASH never sees or stores your password. Access tokens stay on the device
 and are deleted when you sign out.</p>
 
 <h2>Artificial intelligence (optional)</h2>
-<p>If you turn AI on, to summarise signals and prepare meetings DASH sends <strong>the subject and an excerpt of at most
-2,000 characters</strong> of the relevant messages to the service you chose:</p>
+<p>If you turn AI on, DASH sends to the service you chose:</p>
 <ul>
-  <li><strong>Microsoft 365 Copilot</strong>, inside your Microsoft 365, under your Microsoft agreement;</li>
+  <li>to read signals: <strong>the subject and an excerpt of at most 2,000 characters</strong> of the new text of the relevant messages, the date, people’s names and the domain of their address;</li>
+  <li>to prepare a meeting: title, participants, signals and subjects, never the text of the mail;</li>
+  <li>to rewrite a reminder: also the text of the mail it refers to.</li>
+</ul>
+<p>The available services are:</p>
+<ul>
+  <li><strong>Microsoft 365 Copilot</strong>, inside your Microsoft 365, under your Microsoft agreement. This service requires broad permissions, granted by your organisation: SharePoint sites, people, meeting transcripts, chats, channels and external content. DASH asks Copilot to stick to the text it sends, but this is a request, not a technical limit: a summary could include information from other documents you have access to;</li>
   <li><strong>Anthropic (Claude)</strong>, with the API key you enter, under Anthropic's commercial terms; Anthropic does
     not use data received through the API to train its models.</li>
 </ul>
@@ -162,8 +176,13 @@ and are deleted when you sign out.</p>
 
 <h2>Legal basis and retention</h2>
 <p>Data is processed to provide the service you requested by installing and connecting the app (Art. 6(1)(b) GDPR)
-and, for AI and automatic weather, based on your choice to turn them on. It stays on the device while you use DASH and
-is deleted when you uninstall the app (on Windows and Mac also by deleting the DASH data folder); signing out deletes the access tokens. You can delete the file in your OneDrive Apps/DASH folder at any time.</p>
+and, for AI and automatic weather, based on your choice to turn them on. It stays on the device while you use DASH; signing out deletes the access tokens.</p>
+<p><strong>Uninstalling the app does not always delete everything:</strong></p>
+<ul>
+  <li><strong>Windows and Mac:</strong> the data, including the encrypted sign-in and the AI key, stays in the DASH folder until you delete it (<code>%APPDATA%\DASH</code> on Windows, <code>~/Library/Application Support/DASH</code> on the Mac). Sign out first, then uninstall and delete the folder.</li>
+  <li><strong>iPhone, iPad and Android:</strong> before deleting the app, sign out and use “Remove the key” if you entered an AI key. On iPhone and iPad, the sign-in and the key may stay in the keychain even after the app is deleted.</li>
+  <li><strong>OneDrive:</strong> the file in the Apps/DASH folder is not deleted automatically: you can delete it at any time.</li>
+</ul>
 
 <h2>Children</h2>
 <p>DASH is a work tool and is not intended for children under 16.</p>
@@ -181,7 +200,7 @@ Microsoft 365 administrator.</p>
 
 <article id="fr" lang="fr">
 <h1>DASH – Politique de confidentialité</h1>
-<p class="data">Dernière mise à jour : 26 octobre 2026</p>
+<p class="data">Dernière mise à jour : 31 octobre 2026</p>
 
 <p>DASH (Deadlines, Approvals and Signals Hub) est une application de TMAC S.r.l.s. Elle consulte la messagerie, le
 calendrier, les tâches Microsoft To Do et, si vous le souhaitez, Microsoft Teams de <strong>votre</strong> compte
@@ -205,21 +224,26 @@ avez accordées.</p>
 <table>
   <tr><th>Données</th><th>Pourquoi</th><th>Où elles restent</th></tr>
   <tr><td>Nom et adresse e-mail de votre compte Microsoft</td><td>Connexion et message d'accueil</td><td>Sur votre appareil</td></tr>
-  <tr><td>E-mails (expéditeur, destinataires, objet, date, aperçu et texte)</td><td>Repérer ce qui est en retard ou attend une réponse</td><td>Sur votre appareil ; DASH ne modifie ni n'envoie aucun e-mail</td></tr>
+  <tr><td>E-mails (expéditeur, destinataires, objet, date, aperçu et texte)</td><td>Repérer ce qui est en retard ou attend une réponse</td><td>Sur votre appareil ; DASH n'envoie et ne supprime aucun e-mail. Seulement si vous activez « Marquer les messages depuis DASH », il pose ou retire l'indicateur du message</td></tr>
   <tr><td>Calendrier</td><td>Agenda et préparation des réunions</td><td>Sur votre appareil</td></tr>
-  <tr><td>Tâches Microsoft To Do</td><td>Les afficher et les marquer comme terminées</td><td>Dans votre Microsoft 365</td></tr>
+  <tr><td>Tâches Microsoft To Do</td><td>Les afficher, en ajouter de nouvelles et les marquer comme terminées</td><td>Dans votre Microsoft 365</td></tr>
   <tr><td>Conversations et canaux Teams (facultatif)</td><td>Intégrer les messages Teams au Radar</td><td>Sur votre appareil</td></tr>
-  <tr><td>Réglages et règles du Radar</td><td>Les retrouver sur tous vos appareils</td><td>Dans un dossier réservé à l'application, sur <strong>votre</strong> OneDrive (Applications/DASH)</td></tr>
+  <tr><td>Réglages et règles du Radar, signaux résolus ou ignorés, e-mails ignorés, réunions suivies (avec l'objet et les adresses des participants externes), résultats de l'IA (avec de courtes synthèses du contenu, jamais le texte des e-mails)</td><td>Les retrouver sur tous vos appareils</td><td>Sur votre appareil et, seulement si vous activez la synchronisation, dans un dossier réservé à l'application, sur <strong>votre</strong> OneDrive (Applications/DASH)</td></tr>
   <tr><td>Ville pour la météo</td><td>Afficher les prévisions</td><td>Sur votre appareil</td></tr>
 </table>
 <p>Vous vous connectez sur la page officielle de Microsoft : DASH ne voit jamais votre mot de passe et ne le conserve
 pas. Les jetons d'accès restent sur l'appareil et sont supprimés lorsque vous vous déconnectez.</p>
 
 <h2>Intelligence artificielle (facultative)</h2>
-<p>Si vous l'activez, DASH transmet au service de votre choix <strong>l'objet et un extrait de 2 000 caractères au
-plus</strong> des messages concernés, afin de résumer les signaux et de préparer vos réunions :</p>
+<p>Si vous activez l'IA, DASH transmet au service de votre choix :</p>
 <ul>
-  <li><strong>Microsoft 365 Copilot</strong>, au sein de votre Microsoft 365, selon les conditions de votre contrat Microsoft ;</li>
+  <li>pour lire les signaux : <strong>l'objet et un extrait de 2 000 caractères au plus</strong> du nouveau texte des messages concernés, la date, le nom des personnes et le domaine de leur adresse ;</li>
+  <li>pour préparer une réunion : titre, participants, signaux et objets, jamais le texte des e-mails ;</li>
+  <li>pour réécrire une relance : également le texte de l'e-mail concerné.</li>
+</ul>
+<p>Les services disponibles sont :</p>
+<ul>
+  <li><strong>Microsoft 365 Copilot</strong>, au sein de votre Microsoft 365, selon les conditions de votre contrat Microsoft. Ce service exige des autorisations étendues, accordées par votre organisation : sites SharePoint, personnes, transcriptions de réunions, conversations, canaux et contenus externes. DASH demande à Copilot de s'en tenir au texte transmis, mais c'est une demande et non une limite technique : une synthèse pourrait reprendre des informations d'autres documents auxquels vous avez accès ;</li>
   <li><strong>Anthropic (Claude)</strong>, avec la clé API que vous saisissez, selon les conditions commerciales
     d'Anthropic, qui n'utilise pas les données reçues via son API pour entraîner ses modèles.</li>
 </ul>
@@ -238,9 +262,13 @@ garanties prévues par le RGPD (décision d'adéquation ou clauses contractuelle
 <h2>Base légale et durée de conservation</h2>
 <p>Les données sont traitées pour vous fournir le service que vous avez demandé en installant et en connectant
 l'application (art. 6, par. 1, point b du RGPD) et, pour l'IA et la météo automatique, parce que vous avez choisi de
-les activer. Elles restent sur l'appareil tant que vous utilisez DASH et sont supprimées lorsque vous désinstallez
-l'application (sous Windows et sur Mac, également en supprimant le dossier de données de DASH) ; la déconnexion
-supprime les jetons d'accès. Vous pouvez supprimer à tout moment le fichier du dossier Applications/DASH de votre OneDrive.</p>
+les activer. Elles restent sur l'appareil tant que vous utilisez DASH ; la déconnexion supprime les jetons d'accès.</p>
+<p><strong>Désinstaller l'application ne supprime pas toujours tout :</strong></p>
+<ul>
+  <li><strong>Windows et Mac :</strong> les données, y compris la connexion chiffrée et la clé de l'IA, restent dans le dossier de DASH jusqu'à ce que vous le supprimiez (<code>%APPDATA%\DASH</code> sous Windows, <code>~/Library/Application Support/DASH</code> sur Mac). Déconnectez-vous d'abord, puis désinstallez et supprimez le dossier.</li>
+  <li><strong>iPhone, iPad et Android :</strong> avant de supprimer l'application, déconnectez-vous et utilisez « Supprimer la clé » si vous avez saisi une clé d'IA. Sur iPhone et iPad, la connexion et la clé peuvent rester dans le trousseau même après la suppression de l'application.</li>
+  <li><strong>OneDrive :</strong> le fichier du dossier Applications/DASH n'est pas supprimé automatiquement : vous pouvez le supprimer à tout moment.</li>
+</ul>
 
 <h2>Mineurs</h2>
 <p>DASH est un outil professionnel et ne s'adresse pas aux personnes de moins de 16 ans.</p>
@@ -258,7 +286,7 @@ Vous pouvez aussi retirer à tout moment les autorisations accordées à DASH su
 
 <article id="de" lang="de">
 <h1>DASH – Datenschutzerklärung</h1>
-<p class="data">Stand: 26. Oktober 2026</p>
+<p class="data">Stand: 31. Oktober 2026</p>
 
 <p>DASH (Deadlines, Approvals and Signals Hub) ist eine App der TMAC S.r.l.s. Sie liest E-Mails, Kalender, Aufgaben aus
 Microsoft To Do und – wenn Sie möchten – Microsoft Teams aus <strong>Ihrem</strong> Microsoft-365-Konto und zeigt
@@ -281,22 +309,26 @@ in Ihrem Auftrag und mit den Berechtigungen, die Sie (oder Ihre Administration) 
 <table>
   <tr><th>Daten</th><th>Zweck</th><th>Speicherort</th></tr>
   <tr><td>Name und E-Mail-Adresse Ihres Microsoft-Kontos</td><td>Anmeldung und Begrüßung</td><td>Auf Ihrem Gerät</td></tr>
-  <tr><td>E-Mails (Absender, Empfänger, Betreff, Datum, Vorschau und Text)</td><td>Erkennen, was überfällig ist oder auf eine Antwort wartet</td><td>Auf Ihrem Gerät; DASH ändert oder versendet keine E-Mails</td></tr>
+  <tr><td>E-Mails (Absender, Empfänger, Betreff, Datum, Vorschau und Text)</td><td>Erkennen, was überfällig ist oder auf eine Antwort wartet</td><td>Auf Ihrem Gerät; DASH versendet und löscht keine E-Mails. Nur wenn Sie „E-Mails aus DASH kennzeichnen“ einschalten, setzt oder entfernt es die Kennzeichnung der E-Mail</td></tr>
   <tr><td>Kalender</td><td>Terminübersicht und Vorbereitung von Besprechungen</td><td>Auf Ihrem Gerät</td></tr>
-  <tr><td>Aufgaben aus Microsoft To Do</td><td>Anzeigen und als erledigt markieren</td><td>In Ihrem Microsoft 365</td></tr>
+  <tr><td>Aufgaben aus Microsoft To Do</td><td>Anzeigen, neue hinzufügen und als erledigt markieren</td><td>In Ihrem Microsoft 365</td></tr>
   <tr><td>Teams-Chats und -Kanäle (optional)</td><td>Teams-Nachrichten ins Radar aufnehmen</td><td>Auf Ihrem Gerät</td></tr>
-  <tr><td>Einstellungen und Radar-Regeln</td><td>Auf allen Ihren Geräten verfügbar machen</td><td>In einem nur für die App bestimmten Ordner in <strong>Ihrem</strong> OneDrive (Apps/DASH)</td></tr>
+  <tr><td>Einstellungen und Radar-Regeln, erledigte oder ignorierte Signale, ignorierte E-Mails, verfolgte Besprechungen (mit Betreff und Adressen externer Teilnehmer), KI-Ergebnisse (mit kurzen Zusammenfassungen des Inhalts, nie der Text der E-Mails)</td><td>Auf allen Ihren Geräten verfügbar machen</td><td>Auf Ihrem Gerät und, nur wenn Sie die Synchronisierung einschalten, in einem nur für die App bestimmten Ordner in <strong>Ihrem</strong> OneDrive (Apps/DASH)</td></tr>
   <tr><td>Ort für das Wetter</td><td>Vorhersage anzeigen</td><td>Auf Ihrem Gerät</td></tr>
 </table>
 <p>Die Anmeldung erfolgt auf der offiziellen Microsoft-Seite: DASH sieht und speichert Ihr Passwort nie.
 Zugriffstoken bleiben auf dem Gerät und werden beim Abmelden gelöscht.</p>
 
 <h2>Künstliche Intelligenz (optional)</h2>
-<p>Wenn Sie die KI aktivieren, übermittelt DASH <strong>den Betreff und einen Auszug von höchstens 2.000 Zeichen</strong>
-der betreffenden Nachrichten an den von Ihnen gewählten Dienst, um Signale zusammenzufassen und Besprechungen
-vorzubereiten:</p>
+<p>Wenn Sie die KI aktivieren, übermittelt DASH an den von Ihnen gewählten Dienst:</p>
 <ul>
-  <li><strong>Microsoft 365 Copilot</strong> – innerhalb Ihres Microsoft 365, zu den Bedingungen Ihres Microsoft-Vertrags;</li>
+  <li>zum Lesen der Signale: <strong>den Betreff und einen Auszug von höchstens 2.000 Zeichen</strong> des neuen Textes der betreffenden Nachrichten, das Datum, die Namen der Personen und die Domain ihrer Adresse;</li>
+  <li>zur Vorbereitung einer Besprechung: Titel, Teilnehmer, Signale und Betreffzeilen, nie den Text der E-Mails;</li>
+  <li>zum Umschreiben einer Erinnerung: auch den Text der betreffenden E-Mail.</li>
+</ul>
+<p>Verfügbare Dienste:</p>
+<ul>
+  <li><strong>Microsoft 365 Copilot</strong> – innerhalb Ihres Microsoft 365, zu den Bedingungen Ihres Microsoft-Vertrags. Dieser Dienst benötigt weitreichende Berechtigungen, die Ihre Organisation erteilt: SharePoint-Websites, Personen, Besprechungstranskripte, Chats, Kanäle und externe Inhalte. DASH bittet Copilot, sich auf den übermittelten Text zu beschränken, das ist aber eine Anweisung und keine technische Grenze: Eine Zusammenfassung könnte Informationen aus anderen Dokumenten enthalten, auf die Sie Zugriff haben;</li>
   <li><strong>Anthropic (Claude)</strong> – mit dem API-Schlüssel, den Sie selbst eingeben, zu den gewerblichen
     Bedingungen von Anthropic; Anthropic verwendet über die API erhaltene Daten nicht zum Training seiner Modelle.</li>
 </ul>
@@ -314,10 +346,13 @@ Grundlage der Garantien der DSGVO (Angemessenheitsbeschluss oder Standardvertrag
 
 <h2>Rechtsgrundlage und Speicherdauer</h2>
 <p>Die Verarbeitung dient der Bereitstellung des Dienstes, den Sie durch Installation und Verbindung der App angefordert
-haben (Art. 6 Abs. 1 lit. b DSGVO); KI und automatisches Wetter beruhen auf Ihrer Entscheidung, sie zu aktivieren. Die
-Daten bleiben auf dem Gerät, solange Sie DASH nutzen, und werden mit der Deinstallation der App gelöscht (unter Windows
-und auf dem Mac auch durch Löschen des DASH-Datenordners); beim Abmelden werden die Zugriffstoken gelöscht. Die Datei im
-Ordner Apps/DASH Ihres OneDrive können Sie jederzeit löschen.</p>
+haben (Art. 6 Abs. 1 lit. b DSGVO); KI und automatisches Wetter beruhen auf Ihrer Entscheidung, sie zu aktivieren. Die Daten bleiben auf dem Gerät, solange Sie DASH nutzen; beim Abmelden werden die Zugriffstoken gelöscht.</p>
+<p><strong>Die Deinstallation der App löscht nicht immer alles:</strong></p>
+<ul>
+  <li><strong>Windows und Mac:</strong> Die Daten, einschließlich der verschlüsselten Anmeldung und des KI-Schlüssels, bleiben im DASH-Ordner, bis Sie ihn löschen (<code>%APPDATA%\DASH</code> unter Windows, <code>~/Library/Application Support/DASH</code> auf dem Mac). Melden Sie sich zuerst ab, deinstallieren Sie dann und löschen Sie den Ordner.</li>
+  <li><strong>iPhone, iPad und Android:</strong> Melden Sie sich vor dem Löschen der App ab und verwenden Sie „Schlüssel entfernen“, falls Sie einen KI-Schlüssel eingegeben haben. Auf iPhone und iPad können Anmeldung und Schlüssel auch nach dem Löschen der App im Schlüsselbund bleiben.</li>
+  <li><strong>OneDrive:</strong> Die Datei im Ordner Apps/DASH wird nicht automatisch gelöscht: Sie können sie jederzeit löschen.</li>
+</ul>
 
 <h2>Minderjährige</h2>
 <p>DASH ist ein Arbeitswerkzeug und richtet sich nicht an Personen unter 16 Jahren.</p>
