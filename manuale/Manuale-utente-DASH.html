@@ -67,7 +67,7 @@
   <img src="../assets/icona-dash.svg" alt="">
   <h1 style="margin-top:14pt">DASH</h1>
   <div class="acr"><b>D</b>eadlines, <b>A</b>pprovals and <b>S</b>ignals <b>H</b>ub</div>
-  <div class="sotto">Manuale utente · versione 1.6.5<br>Windows · Mac · iPhone e iPad · Android</div>
+  <div class="sotto">Manuale utente · versione 1.6.6<br>Windows · Mac · iPhone e iPad · Android</div>
   <div class="tmac"><img src="../assets/mark-128.png" alt=""> by TMAC</div>
 </section>
 
@@ -125,7 +125,7 @@
   <li><b class="k">In ritardo</b>: impegni scaduti, richieste a cui non hai risposto entro la data chiesta, riunioni con esterni senza un seguito;</li>
   <li><b class="k">Approvazioni ferme</b>: approvazioni chieste a te o da te che aspettano da troppi giorni;</li>
   <li><b class="k">Mi aspettano</b>: persone che aspettano una tua risposta;</li>
-  <li><b class="k">Sto aspettando</b>: tue richieste che non hanno ancora avuto riscontro.</li>
+  <li><b class="k">Sto aspettando</b>: tue richieste che non hanno ancora avuto riscontro dalla persona a cui hai scritto (o dalla sua azienda): se risponde solo un collega in copia, il segnale resta e lo dice. Se hai scritto a colleghi, basta la risposta di un collega.</li>
 </ul>
 <p>Non devi inserire nulla: DASH lavora sui dati che hai già in Microsoft 365. Non sostituisce Outlook, Teams o gli strumenti di progetto: li affianca.</p>
 <table>
@@ -142,10 +142,10 @@
 <p>Hai già ricevuto un invito o un file di installazione? Vai direttamente al capitolo del tuo dispositivo:</p>
 <table class="dispositivi">
   <tr><th>Hai</th><th>Come si installa</th><th>Leggi</th></tr>
-  <tr><td><b>PC Windows</b> (10 o 11)</td><td>File <code>DASH-Setup-1.6.5.exe</code></td><td><a href="#c10">Capitolo 10</a></td></tr>
-  <tr><td><b>Mac</b> con processore Apple (M1 o successivi)</td><td>File <code>DASH-1.6.5-mac.dmg</code></td><td><a href="#c11">Capitolo 11</a></td></tr>
+  <tr><td><b>PC Windows</b> (10 o 11)</td><td>File <code>DASH-Setup-1.6.6.exe</code></td><td><a href="#c10">Capitolo 10</a></td></tr>
+  <tr><td><b>Mac</b> con processore Apple (M1 o successivi)</td><td>File <code>DASH-1.6.6-mac.dmg</code></td><td><a href="#c11">Capitolo 11</a></td></tr>
   <tr><td><b>iPhone o iPad</b></td><td>Invito a <b>TestFlight</b></td><td><a href="#c12">Capitolo 12</a></td></tr>
-  <tr><td><b>Telefono Android</b> (7 o successivo)</td><td>File <code>DASH-1.6.5-android.apk</code></td><td><a href="#c13">Capitolo 13</a></td></tr>
+  <tr><td><b>Telefono Android</b> (7 o successivo)</td><td>File <code>DASH-1.6.6-android.apk</code></td><td><a href="#c13">Capitolo 13</a></td></tr>
 </table>
 <p>Il resto del manuale è in quest'ordine:</p>
 <ul>
@@ -177,7 +177,7 @@
   <img src="img/it/02-radar.png" alt="Il Radar con due blocchi aperti">
   <div class="testo">
     <p>Il Radar ha quattro blocchi, chiusi all'avvio: il <b>numero</b> accanto al titolo dice quanti segnali ci sono (rosso per «In ritardo» e «Approvazioni ferme»). Clicca il titolo per aprirli.</p>
-    <p>Ogni segnale mostra chi, l'oggetto, da quanti <b>giorni lavorativi</b> aspetta (sabato, domenica e festività italiane non contano) e una riga di spiegazione. Il bordo rosso indica ciò che è urgente o scaduto.</p>
+    <p>Ogni segnale mostra chi, l'oggetto, da quanti <b>giorni lavorativi</b> aspetta (sabato, domenica, Capodanno e Natale non contano, né le feste che aggiungi in <b>I tuoi giorni festivi</b>) e una riga di spiegazione. Il bordo rosso indica ciò che è urgente o scaduto. Senza AI, richieste, approvazioni e scadenze si riconoscono in italiano, inglese, tedesco e francese, qualunque sia la lingua dell'app.</p>
     <p><b>Clic su un segnale</b> per aprirlo: compaiono l'oggetto per intero e il <b>testo</b> (le prime righe della mail o del messaggio Teams, oppure la nota dell'attività di To Do). Un altro clic lo richiude; per leggere tutto usa <b>Apri</b>.</p>
     <p>Contrassegni: <b>Teams</b> (viola) se il segnale viene da una chat di Teams; <b>AI</b> se è stato letto dall'intelligenza artificiale.</p>
   </div>
@@ -203,9 +203,9 @@
   <img src="img/it/10-leggi.png" alt="">
   <div class="testo"><p><b>Leggi</b> mostra il segnale per intero, con la sintesi e tutto il testo nuovo della mail o del messaggio.</p></div>
 </div>
-<p>I segnali nascosti con Risolto o Ignora tornano visibili se nella stessa conversazione arriva qualcosa di nuovo. Puoi farli ricomparire tutti in Regole del Radar › «Rimostrali».</p>
+<p>I segnali nascosti con Risolto o Ignora tornano visibili se nella stessa conversazione arriva qualcosa di nuovo. In Regole del Radar › «Rivedi i segnali nascosti» li ritrovi e puoi rimetterne in vista uno con «Rimostra»; «Rimostrali» li fa ricomparire tutti.</p>
 <h3>Riepilogo del mattino</h3>
-<p>Alle <b>8:30</b> dei giorni lavorativi DASH manda una notifica, che resta sullo schermo finché non la chiudi, e mette in cima al Radar il riquadro <b>«Il Radar di oggi»</b>: le cose in sospeso del mattino, divise per blocco («In ritardo» e «Approvazioni ferme» aperti, gli altri con un clic). Durante la giornata il riquadro si aggiorna: ciò che chiudi resta <b>barrato con ✓</b>, ciò che arriva dopo compare con l'etichetta <b>«nuova»</b> e in alto vedi quante cose hai fatto («3 di 9 fatte»). Un clic su una voce la apre; un clic sul titolo riduce il riquadro a una riga e lo riapre. Il riepilogo si spegne in Regole del Radar.</p>
+<p>Alle <b>8:30</b> dei giorni lavorativi DASH manda una notifica, che su Windows resta sullo schermo finché non la chiudi. In cima al Radar, ogni giorno dal primo aggiornamento, trovi il riquadro <b>«Il Radar di oggi»</b>: le cose in sospeso del mattino, divise per blocco («In ritardo» e «Approvazioni ferme» aperti, gli altri con un clic). Durante la giornata il riquadro si aggiorna: ciò che chiudi resta <b>barrato con ✓</b>, ciò che arriva dopo compare con l'etichetta <b>«nuova»</b> e in alto vedi quante cose hai fatto («3 di 9 fatte»). Un clic su una voce la apre; un clic sul titolo riduce il riquadro a una riga e lo riapre. Il riepilogo si spegne in Regole del Radar.</p>
 <div class="fig">
   <img src="img/it/11-radar-oggi.png" alt="">
   <div class="testo"><p>«Il Radar di oggi»: le cose in sospeso del mattino, divise per blocco, con quante ne hai già fatte.</p></div>
@@ -237,7 +237,8 @@
     <ul>
       <li><b>«Sto aspettando» dopo</b>: quanti giorni lavorativi senza risposta prima di segnalare una tua richiesta (3 di base).</li>
       <li><b>Approvazioni ferme dopo</b>: lo stesso per le approvazioni (2).</li>
-      <li><b>Follow-up delle riunioni entro</b>: giorni dopo una riunione con persone esterne senza una tua mail ai partecipanti (2).</li>
+      <li><b>Follow-up delle riunioni entro</b>: giorni dopo una riunione con persone esterne senza una tua mail ai partecipanti (2). Non vale per le riunioni che hai rifiutato né per quelle organizzate da altri con più di 8 esterni.</li>
+      <li><b>I tuoi giorni festivi</b>: le feste da non contare, separate da virgola. <code>15/08</code> vale ogni anno, <code>24/12/2026</code> una volta sola. Nel calendario di DASH questi giorni, Capodanno e Natale sono in rosso.</li>
       <li><b>Riepilogo alle 8:30</b>: accende o spegne la notifica del mattino.</li>
       <li><b>Promemoria 15 minuti prima delle riunioni</b>: accende o spegne la notifica di «Pronto per la riunione».</li>
       <li><b>Leggi anche Microsoft Teams</b>: vedi capitolo 6.</li>
@@ -255,8 +256,8 @@
   <li><b>Oggetto</b>: una o più parole separate da virgola; ne basta una.</li>
 </ul>
 <p>Esempio: Da/a <code>cliente.it</code> e Oggetto <code>report, estrazione settimanale</code> esclude la reportistica di quel cliente, ma non le sue altre mail.</p>
-<div class="nota">Anche una <b>regola di Outlook</b> funziona: DASH legge solo Posta in arrivo e Posta inviata, quindi le mail spostate automaticamente in un'altra cartella (es. «Reportistica») sono già fuori dal Radar.</div>
-<p>In fondo al pannello, <b>Escluse nell'ultimo aggiornamento</b> (clicca per aprire) elenca le mail scartate e il motivo: utile per controllare che le regole facciano ciò che vuoi. Ricordati di cliccare <b>Salva</b>.</p>
+<div class="nota">Anche una <b>regola di Outlook</b> funziona: DASH legge solo Posta in arrivo e Posta inviata, quindi le mail spostate automaticamente in un'altra cartella (es. «Reportistica») sono già fuori dal Radar. Le risposte alle tue richieste di almeno un giorno prima (fino a 40 alla volta), invece, DASH le riconosce anche se sono finite in un'altra cartella.</div>
+<p>In fondo al pannello, <b>Escluse nell'ultimo aggiornamento</b> (clicca per aprire) elenca le mail scartate e il motivo: utile per controllare che le regole facciano ciò che vuoi. <b>Scartate perché non sembrano richieste</b> elenca le mail rivolte a te che DASH non ha considerato richieste, con prima quelle che contengono una scadenza o un'approvazione. Ricordati di cliccare <b>Salva</b>.</p>
 
 <h2 id="c6">6. Microsoft Teams</h2>
 <p>Con <b>Leggi anche Microsoft Teams</b> acceso (Regole del Radar), DASH considera anche:</p>
@@ -293,7 +294,7 @@
   <li>le <b>mail da non considerare</b>;</li>
   <li>le <b>analisi dell'AI</b>: una mail letta da Copilot su un dispositivo non si rilegge sull'altro.</li>
 </ul>
-<p>Restano su ciascun dispositivo: Client ID e Tenant, la lingua, la chiave di Anthropic, la combinazione di tasti, l'avvio con Windows, il logo e i costi dell'AI. La sincronizzazione avviene a ogni aggiornamento e pochi secondi dopo ogni tua azione; sotto la casella compare l'ora dell'ultima sincronizzazione. Se due dispositivi cambiano le Regole quasi insieme, vale l'ultima modifica.</p>
+<p>Restano su ciascun dispositivo: Client ID e Tenant, la lingua, le chiavi di Anthropic e di OpenAI, la combinazione di tasti, l'avvio con Windows, il logo e i costi dell'AI. La sincronizzazione avviene a ogni aggiornamento e pochi secondi dopo ogni tua azione; sotto la casella compare l'ora dell'ultima sincronizzazione. Le regole sulle mail da non considerare aggiunte su dispositivi diversi si sommano e quelle tolte restano tolte; per gli altri valori delle Regole vale l'ultima modifica.</p>
 <p>I dati stanno in un file in una cartella riservata a DASH nel <b>tuo OneDrive</b> (<b>App › DASH</b>): non spostarla né modificarla. La prima volta DASH può chiederti di accedere di nuovo, perché Microsoft deve confermare il permesso per quella cartella.</p>
 
 <div class="parte salto-parte">Parte 3 · Configurazione: le parti in comune</div>
@@ -301,7 +302,7 @@
 <h2 id="c8">8. Collegare la posta</h2>
 <p>DASH legge i dati dal server di posta della tua organizzazione. Oggi la piattaforma supportata è <b>Microsoft 365</b> (Outlook, calendario, To Do e Teams); quando saranno disponibili altre piattaforme, le loro istruzioni saranno in questo capitolo.</p>
 <h3>Microsoft 365 e Teams</h3>
-<p>DASH usa una <b>registrazione app in Entra ID</b> con <b>permessi delegati</b>: ogni persona vede solo la propria casella, e i dati passano solo tra i dispositivi degli utenti e il Microsoft 365 della vostra organizzazione (TMAC non riceve nulla). Ogni organizzazione usa il <b>proprio tenant</b> e, per l'intelligenza artificiale, la <b>propria</b> licenza Copilot o chiave di Anthropic.</p>
+<p>DASH usa una <b>registrazione app in Entra ID</b> con <b>permessi delegati</b>: ogni persona vede solo la propria casella, e i dati passano solo tra i dispositivi degli utenti e il Microsoft 365 della vostra organizzazione (TMAC non riceve nulla). Ogni organizzazione usa il <b>proprio tenant</b> e, per l'intelligenza artificiale, la <b>propria</b> licenza Copilot o chiave di Anthropic o di OpenAI.</p>
 <p>Una sola volta per tutta l'organizzazione, l'amministratore registra DASH nel vostro tenant come segue e comunica agli utenti <b>Client ID</b> e <b>Tenant</b> (o il nome di dominio), da inserire al primo avvio.</p>
 <h3>Registrazione app (5 minuti)</h3>
 <ol>
@@ -336,18 +337,19 @@
       <li><b>Solo regole</b>: nessun costo, nessun dato inviato;</li>
       <li><b>Microsoft 365 Copilot</b>: nessun costo in più se hai la licenza Microsoft 365 Copilot; i dati restano in Microsoft 365. Dopo il salvataggio DASH può chiederti di accedere di nuovo. Clicca <b>Prova Copilot</b> per verificare;</li>
       <li><b>API di Anthropic (Claude)</b>: serve una chiave della Console di Anthropic, a consumo. Incolla la chiave, <b>Salva</b> e <b>Prova la chiave</b>. Fissa un tetto di spesa nella Console.</li>
+      <li><b>API di OpenAI (ChatGPT)</b>: serve una chiave della piattaforma di OpenAI, a consumo; un abbonamento a ChatGPT non basta. Incolla la chiave, <b>Salva</b> e <b>Prova la chiave</b>. Fissa un tetto di spesa nella piattaforma.</li>
     </ul>
   </div>
 </div>
-<p><b>Mail lette al giorno, al massimo</b> è un limite di sicurezza (150 di base); ogni mail si legge una volta sola. Il riquadro sotto mostra quante mail sono state lette oggi e, per Anthropic, il costo stimato del mese.</p>
+<p><b>Mail lette al giorno, al massimo</b> è un limite di sicurezza (150 di base); ogni mail si legge una volta sola. Con Anthropic e OpenAI va spuntata anche l'<b>autorizzazione</b> all'invio dei dati, su ogni dispositivo: senza, nessun dato parte e il Radar lavora con le regole. Si revoca togliendo la spunta o scegliendo «Solo regole». Il riquadro sotto mostra quante mail sono state lette oggi e, per Anthropic e OpenAI, il costo stimato del mese.</p>
 
 <div class="parte salto-parte">Parte 4 · Installazione: una sezione per piattaforma</div>
 <p class="intro-parte">Leggi solo il capitolo della tua piattaforma, poi il primo accesso.</p>
 <h2 id="c10">10. DASH su Windows</h2>
-<p>Serve un PC con <b>Windows 10 o 11</b> e il file <code>DASH-Setup-1.6.5.exe</code>.</p>
+<p>Serve un PC con <b>Windows 10 o 11</b> e il file <code>DASH-Setup-1.6.6.exe</code>.</p>
 <h3>Installazione</h3>
 <ol>
-  <li>Fai doppio clic su <code>DASH-Setup-1.6.5.exe</code>.</li>
+  <li>Fai doppio clic su <code>DASH-Setup-1.6.6.exe</code>.</li>
   <li>Se Windows mostra «<b>Windows ha protetto il PC</b>» (SmartScreen), clicca <b>Ulteriori informazioni</b> e poi <b>Esegui comunque</b>. L'avviso compare perché il programma non è ancora firmato digitalmente: procedi solo se hai ricevuto il file da una fonte di cui ti fidi.</li>
   <li>Scegli se installare solo per te (consigliato) e la cartella, poi <b>Installa</b>. Non servono diritti di amministratore.</li>
   <li>Al termine DASH si avvia da solo. Trovi l'icona sul desktop e nel menu Start.</li>
@@ -370,7 +372,7 @@
 <p>Sul Mac DASH è lo stesso programma di Windows. Serve un <b>Mac con processore Apple</b> (M1 o successivi): sui Mac con processore Intel questa versione non si apre.</p>
 <h3>Installazione</h3>
 <ol>
-  <li>Fai doppio clic sul file <code>DASH-1.6.5-mac.dmg</code>.</li>
+  <li>Fai doppio clic sul file <code>DASH-1.6.6-mac.dmg</code>.</li>
   <li>Nella finestra che compare, <b>trascina l'icona di DASH</b> sulla cartella <b>Applicazioni</b>. Poi chiudi la finestra ed espelli il disco «DASH» (tasto destro › Espelli).</li>
   <li>Apri <b>Applicazioni</b> e fai doppio clic su <b>DASH</b>.</li>
   <li>Se macOS dice che <b>non può aprirlo</b> perché lo sviluppatore non è verificato: vai in <b>Impostazioni di Sistema › Privacy e sicurezza</b>, scorri in basso fino a «DASH è stato bloccato…», premi <b>Apri comunque</b> e conferma con la password del Mac. Succede solo la prima volta.</li>
@@ -414,7 +416,7 @@
       <li><b>Testata compatta</b>: ora, data e temperatura stanno in una riga. <b>Tocca la riga</b> per aprire o chiudere le previsioni dei prossimi giorni; DASH ricorda la scelta.</li>
       <li><b>Azioni sempre visibili</b> sotto ogni segnale (Apri, Risolto, Ignora, Ignora simili), perché sul telefono non c'è il passaggio del mouse.</li>
       <li><b>Aggiornamento</b>: ogni 5 minuti <b>mentre l'app è aperta</b>, e subito quando ci torni. Con l'app chiusa iOS non lascia leggere la posta: aprendola dopo molte ore, l'AI impiega un paio di minuti a leggere le mail nuove.</li>
-      <li><b>Riepilogo del mattino</b>: arriva come <b>notifica</b> alle 8:30 dei giorni lavorativi, con i dati dell'ultima volta che hai aperto DASH. Aprendo l'app dopo le 8:30 trovi anche il riquadro <b>«Il Radar di oggi»</b> in cima al Radar, come sul PC. Consenti le notifiche al primo avvio.</li>
+      <li><b>Riepilogo del mattino</b>: arriva come <b>notifica</b> alle 8:30 dei giorni lavorativi, con i dati dell'ultima volta che hai aperto DASH. Aprendo l'app trovi ogni giorno anche il riquadro <b>«Il Radar di oggi»</b> in cima al Radar, come sul PC. Consenti le notifiche al primo avvio.</li>
       <li><b>Apri</b> porta all'app <b>Outlook</b> o <b>Teams</b> dell'iPhone, se installate, altrimenti a Safari.</li>
       <li><b>Schermo grande</b>: sull'<b>iPhone Duo aperto</b>, sull'iPad o con il telefono in orizzontale DASH si divide in <b>due colonne</b>, a sinistra il Radar e a destra Agenda, Calendario e To Do. Da chiuso o in verticale torna da solo a una colonna.</li>
       <li>Non ci sono la combinazione di tasti, l'avvio con Windows, la scelta dell'Outlook classico e il logo dell'azienda.</li>
@@ -430,7 +432,7 @@
 <h2 id="c13" class="salto">13. DASH su Android</h2>
 <p>Sui telefoni Android DASH è la stessa app dell'iPhone e serve Android 7 o successivo. Le particolarità del telefono sono nel <a href="#c12">capitolo 12</a> («Cosa c'è di particolare sul telefono»), comprese le <b>due colonne</b> con il telefono in orizzontale o sui pieghevoli aperti.</p>
 <h3>Installazione</h3>
-<p>Per ora DASH per Android non è sul Play Store: si installa dal file <code>DASH-1.6.5-android.apk</code>, che ricevi per mail, OneDrive o Teams.</p>
+<p>Per ora DASH per Android non è sul Play Store: si installa dal file <code>DASH-1.6.6-android.apk</code>, che ricevi per mail, OneDrive o Teams.</p>
 <ol>
   <li>Apri il file <b>dal telefono</b> (tocca l'allegato o il file in OneDrive).</li>
   <li>Android chiede di consentire l'installazione da quell'app (per esempio Outlook o il browser): tocca <b>Impostazioni</b>, accendi <b>Consenti da questa fonte</b> e torna indietro.</li>
@@ -442,7 +444,7 @@
 <h3>Cosa c'è di diverso dall'iPhone</h3>
 <ul>
   <li><b>Apri</b> porta all'app <b>Outlook</b> o <b>Teams</b> di Android, se installate, altrimenti al browser.</li>
-  <li>La sessione e la chiave di Anthropic sono cifrate nell'<b>archivio protetto di Android</b> invece che nel portachiavi di iOS.</li>
+  <li>La sessione e le chiavi di Anthropic e OpenAI sono cifrate nell'<b>archivio protetto di Android</b> invece che nel portachiavi di iOS.</li>
   <li>Il <b>Client ID</b> e il <b>Tenant</b> sono gli stessi; in Entra ID l'amministratore aggiunge la piattaforma Android (capitolo 8).</li>
 </ul>
 <h3>Disinstallare</h3>
@@ -455,7 +457,7 @@
 <ul>
   <li>Un account <b>Microsoft 365</b> della tua organizzazione (posta e calendario di Outlook).</li>
   <li>Il <b>Client ID</b> e il <b>Tenant</b> di DASH per la tua organizzazione: te li comunica l'amministratore Microsoft 365. Se non è ancora stato fatto, gli basta il <a href="#c8">capitolo 8</a>.</li>
-  <li>Facoltativo, per l'intelligenza artificiale: la licenza <b>Microsoft 365 Copilot</b> oppure una chiave delle <b>API di Anthropic</b> (<a href="#c9">capitolo 9</a>).</li>
+  <li>Facoltativo, per l'intelligenza artificiale: la licenza <b>Microsoft 365 Copilot</b> oppure una chiave delle <b>API di Anthropic</b> o di <b>OpenAI</b> (<a href="#c9">capitolo 9</a>).</li>
 </ul>
 <ol>
   <li>Al primo avvio DASH apre le <b>Impostazioni</b>. Inserisci l'<b>Application (client) ID</b> e il <b>Tenant</b> che ti ha comunicato l'amministratore Microsoft 365 della tua organizzazione (il Tenant può essere il dominio, es. <code>azienda.it</code>, o l'ID directory). Clicca <b>Salva</b>.</li>
@@ -471,14 +473,15 @@
 <h2 id="c15">15. Riservatezza dei dati</h2>
 <ul>
   <li>DASH funziona <b>sul tuo PC</b> o <b>sul tuo Mac</b> e <b>sul tuo telefono</b> (iPhone o Android): non c'è un server di TMAC in mezzo. Legge solo la <b>tua</b> casella, con i <b>tuoi</b> permessi. Nessun altro, nemmeno TMAC, vede i tuoi segnali.</li>
-  <li><b>TMAC non riceve e non vede i tuoi dati.</b> L'intelligenza artificiale che DASH usa è quella della <b>tua organizzazione</b>: la sua licenza Microsoft 365 Copilot o la sua chiave di Anthropic, con i suoi contratti. TMAC fornisce solo il programma.</li>
+  <li><b>TMAC non riceve e non vede i tuoi dati.</b> L'intelligenza artificiale che DASH usa è quella della <b>tua organizzazione</b>: la sua licenza Microsoft 365 Copilot o la sua chiave di Anthropic o di OpenAI, con i suoi contratti. TMAC fornisce solo il programma.</li>
   <li>Con la <b>sincronizzazione</b> accesa, impostazioni, segnali nascosti e segnali estratti dall'AI si copiano anche nella cartella di DASH del <b>tuo OneDrive</b>: restano nel Microsoft 365 della tua organizzazione, mai presso TMAC.</li>
-  <li>Sul dispositivo DASH conserva le impostazioni, i segnali nascosti e, con l'AI, i <b>soli segnali estratti</b> (non i testi delle mail). La sessione Microsoft e la chiave di Anthropic sono cifrate con la protezione del sistema: Windows, portachiavi del Mac o dell'iPhone, archivio protetto di Android.</li>
+  <li>Sul dispositivo DASH conserva le impostazioni, i segnali nascosti e, con l'AI, i <b>soli segnali estratti</b> (non i testi delle mail). La sessione Microsoft e le chiavi di Anthropic e OpenAI sono cifrate con la protezione del sistema: Windows, portachiavi del Mac o dell'iPhone, archivio protetto di Android.</li>
   <li>Con l'AI attiva, al modello vanno solo data, oggetto, nomi, dominio e testo nuovo delle mail e dei messaggi che il Radar valuta: <b>mai</b> indirizzi completi, allegati, mail escluse dalle regole o automatiche.</li>
   <li><b>Copilot</b>: i dati restano nel perimetro di Microsoft 365 della tua organizzazione, secondo i suoi impegni contrattuali (tra cui il non addestramento dei modelli sui dati dei clienti).</li>
   <li><b>API di Anthropic</b>: con il contratto commerciale i dati, per impostazione, non sono usati per addestrare i modelli; l'elaborazione avviene fuori dall'UE. Usala solo se la tua organizzazione l'ha approvata.</li>
+  <li><b>API di OpenAI</b>: per impostazione i dati non sono usati per addestrare i modelli; OpenAI conserva i registri di controllo degli abusi fino a 30 giorni. Usala solo se la tua organizzazione l'ha approvata.</li>
 </ul>
-<div class="attenzione">Le garanzie legali (accordo sul trattamento dei dati, trasferimenti fuori UE, informativa) dipendono dai contratti con Microsoft e Anthropic e dalle verifiche del referente privacy della tua organizzazione: questo manuale descrive come funziona DASH, non sostituisce quelle verifiche.</div>
+<div class="attenzione">Le garanzie legali (accordo sul trattamento dei dati, trasferimenti fuori UE, informativa) dipendono dai contratti con Microsoft, Anthropic e OpenAI e dalle verifiche del referente privacy della tua organizzazione: questo manuale descrive come funziona DASH, non sostituisce quelle verifiche.</div>
 
 <h2 id="c16">16. Problemi frequenti</h2>
 <h3>Su tutti i dispositivi</h3>
@@ -488,10 +491,10 @@
   <tr><td>«Sessione scaduta: accedi di nuovo»</td><td>Clicca <b>Accedi</b> e rientra con il tuo account. Succede dopo un cambio di password o di permessi.</td></tr>
   <tr><td>«È necessaria l'approvazione dell'amministratore» all'accesso</td><td>L'amministratore Microsoft 365 deve concedere il consenso all'app DASH (capitolo 8).</td></tr>
   <tr><td>«Teams non leggibile» nel Radar</td><td>Mancano i permessi di Teams: avvisa l'amministratore. Puoi spegnere Teams nelle Regole.</td></tr>
-  <tr><td>«AI: errore» in alto nel Radar</td><td>Passa il mouse per leggere il motivo. Copilot: serve la licenza Microsoft 365 Copilot e i permessi; Anthropic: chiave non valida o credito esaurito.</td></tr>
+  <tr><td>«AI: errore» in alto nel Radar</td><td>Passa il mouse per leggere il motivo. Copilot: serve la licenza Microsoft 365 Copilot e i permessi; Anthropic e OpenAI: chiave non valida o credito esaurito.</td></tr>
   <tr><td>Sotto «Sincronizza…»: «OneDrive non consente l'accesso»</td><td>Manca il permesso <code>Files.ReadWrite.AppFolder</code>: avvisa l'amministratore (capitolo 8), poi esci e accedi di nuovo.</td></tr>
   <tr><td>Un segnale sbagliato che torna sempre</td><td>Usa <b>Ignora simili</b>, oppure una regola o una categoria di Outlook.</td></tr>
-  <tr><td>Manca un segnale che ti aspettavi</td><td>Controlla «Escluse nell'ultimo aggiornamento» nelle Regole; ricorda che DASH guarda le ultime due settimane e solo Posta in arrivo e Posta inviata.</td></tr>
+  <tr><td>Manca un segnale che ti aspettavi</td><td>Controlla «Escluse nell'ultimo aggiornamento» e «Scartate perché non sembrano richieste» nelle Regole; ricorda che DASH guarda le ultime due settimane e solo Posta in arrivo e Posta inviata. Se ricevi moltissima posta, il Radar avvisa quando ha letto solo le ultime mail.</td></tr>
 </table>
 <h3>Su Windows e Mac</h3>
 <table>
